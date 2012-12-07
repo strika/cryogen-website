@@ -1,11 +1,13 @@
-<!doctype html>  
+<!DOCTYPE html>  
 <html lang="sr">  
   <head>  
     <meta charset="utf-8">  
     <title>Небојша Стричевић - лична веб страница</title>
     <meta name="description" content="Nebojsa Stricevic's personal website."/>
-    <meta name="author" content="Nebojša Stričević"/>
-    <link rel="stylesheet" href="style.css">  
+    <meta name="author" content="Nebojša Stričević" />
+    <link rel="stylesheet" href="foundation.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34678199-1']);
@@ -18,46 +20,44 @@
       })();
     </script>
   </head>  
-  <body>  
+  <body class="row twelve">  
+    
     <div class="main">
-      <div class="header">
-        <div class="title">
-          <h1>Небојша Стричевић</h1>
-          <h4>супруг, програмер, љубитељ црног пива</h4>
-        </div>
-
-        <div class="lang">
+      
+      <div class="header seven">
+          <h1><span>Небојша Стричевић</span></h1>
+          <p><span>супруг, програмер, љубитељ црног пива</span></p>
+      </div>
+      
+        <div id="lang_e">
           <a href="index.html">English</a>
-          <a href="index_sr.html">Српски</a>
         </div>
-      </div>
-
-      <hr/>
-
-      <div class="img">
-        <img src="img02.png" alt="Tanja i Nebojša"/>
-      </div>
+        
+        <div id="lang_s">
+	  <a href="index_sr.html">Српски</a>
+	</div>
 
       <div class="contact">
-        <h4>Контакт</h4>
-        <p>е-пошта: <a title="email" href="mailto:nebojsa.stricevic@gmail.com">nebojsa.stricevic@gmail.com</a></p>
-        <p>twitter: <a href="http://www.twitter.com/nstricevic" target="_blank">twitter.com/nstricevic</a></p>
-        <p>github: <a href="https://github.com/strika" target="_blank">github.com/strika</a></p>
+        <ul>
+        <li class="logo"><a title="email" href="mailto:nebojsa.stricevic@gmail.com"><img src="gmail-logo.png"/></a></li>
+        <li class="logo"><a title="twitter" href="http://www.twitter.com/nstricevic" target="_blank"><img src="icon-twitter-logo.png" /></a></li>
+        <li class="logo"><a title="github" href="https://www.github.com/strika" target="_blank"><img src="github-logo.png" /></a></li>
+	</ul>
       </div>
-
-      <h2>Укратко</h2>
-
-      <h3>Некада</h3>
-
-      <p>Сарадник у настави на Факултету техничких наука у Новом Саду. Докторант и падобранац у покушају.
-      Дугогодишњи волонтер Црвеног крста у Сомбору.</p>
-
-      <h3>Данас</h3>
-
-      <p>Програмер у <a href="http://www.renderedtext.com" target="_blank">Render Text</a>. 
-      Заљубљеник у механичке часовнике. Редован добровољни давалац крви.</p>
-
-      <p>Живи са супругом Тањом у Новом Саду.</p>
+      
+      <div class="about seven">
+	 <h2><span>Данас</span></h2>
+	 <p id="rendered-text"><span>Програмер у <a href="http://www.renderedtext.com" target="_blank">Render Text</a>.</span></p>
+	 <p><span>Заљубљеник у механичке часовнике.</span></p>
+	 <p><span>Редован добровољни давалац крви.</span></p>
+	 <p><span>Живи са супругом Тањом у Новом Саду.</span></p>
+     
+	 <h2><span>Некада</span></h2>
+	 <p><span>Сарадник у настави на Факултету техничких наука у Новом Саду.</span></p>
+	 <p><span>Докторант и падобранац у покушају.</span></p>
+	 <p><span>Дугогодишњи волонтер Црвеног крста у Сомбору.</span></p>
+      </div>
+     
     </div>
   </body>  
 </html>  
