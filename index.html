@@ -1,61 +1,89 @@
 <!DOCTYPE html>  
-<html lang="en">  
-  <head>  
-    <meta charset="utf-8">  
-    <title>Nebojša Stričević - personal web page</title>
-    <meta name="description" content="Nebojsa Stricevic's personal website."/>
-    <meta name="author" content="Nebojša Stričević"/>
-    <link rel="stylesheet" href="foundation.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34678199-1']);
-      _gaq.push(['_trackPageview']);
+<html lang='en'>  
+    <head>  
+        <meta charset='utf-8'>  
+        <title>Nebojša Stričević - personal web page</title>
+        <meta name='description' content="Nebojsa Stricevic's personal info."/>
+        <meta name="author" content='Nebojša Stričević'/>
+        <link rel='stylesheet' href='foundation.min.css'>
+        <link rel='stylesheet' href='style.css'>
+        <link href='http://fonts.googleapis.com/css?family=Averia+Gruesa+Libre&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head> 
-  <body class="row twelve">
+        <style>
+            @media screen and (max-width: 800px) {
+                footer li {
+                    margin: 0.2em;
+                }
+                .today, .once {
+                    display: block;
+                    float: none;
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                h1 {
+                    font-size: 2.3em;
+                    color: #981020; 
+                    font-weight: bold;
+                    font-family: 'Averia Gruesa Libre', cursive;
+                }
+                footer li a {
+                    font-weight: normal;
+                    margin: 0.1em;
+                    font-size: 0.9em;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                h1 {
+                    font-size: 1.8em;
+                    color: #981020; 
+                    font-weight: bold;
+                    font-family: 'Averia Gruesa Libre', cursive;
+                }
+            }
+        </style>
 
-    <div class="main">
-      <div class="header seven">
-	  <h1><span>Nebojša Stričević</span></h1>
-	  <p><span>husband, programmer, aficionado of dark beer</span></p>
-      </div>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34678199-1']);
+          _gaq.push(['_trackPageview']);
 
-        <div id="lang_e">
-          <a href="index.html">English</a>
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </head> 
+    <body>
+        <div class="main seven">
+            <header>
+                <h1>Nebojša Stričević</h1>
+                <hr>
+            </header>
+            <div>
+                <div class='today five'>
+                    <h2>Today</h2>
+                    <p>Software engineer at <a href='http://www.renderedtext.com' target='_blank'>Render Text.</a></p>
+                    <p>Mechanical watches enthusiast.</p> 
+                    <p>Regular blood donor.</p>
+                    <p>Lives with spouse Tanja in Novi Sad, Serbia.</p>
+                </div> 
+                <div class='once five right'>
+                    <h2>Once</h2>
+                    <p>PhD student and teaching assistant at Faculty of Technical Sciences, Novi Sad, Serbia.</p>
+                    <p>Wannabe skydiver.</p>
+                    <p>Red Cross volunteer.</p>
+                </div>
+            </div>
+            <footer>
+                <hr>
+                <ul>
+                    <li><a title='email' href='mailto:nebojsa.stricevic@gmail.com'>gmail</a></li>
+                    <li><a title='twitter' href='http://www.twitter.com/nstricevic' target='_blank'>twitter</a></li>
+                    <li><a title='github' href='https://www.github.com/strika' target='_blank'>github</a></li>
+                </ul>
+            </footer>
         </div>
-        <div id = "lang_s">
-	  <a href="index_sr.html">Српски</a>
-	</div>
-      
-      <div class="contact">
-	<ul>
-	  <li class="logo"><a title="email" href="mailto:nebojsa.stricevic@gmail.com"><img src="gmail-logo.png"/></a></li>
-	  <li class="logo"><a title="twitter" href="http://www.twitter.com/nstricevic" target="_blank"><img src="icon-twitter-logo.png" /></a></li>
-	  <li class="logo"><a title="github" href="https://www.github.com/strika" target="_blank"><img src="github-logo.png" /></a></li>
-	</ul>
-      </div>	
-	
-      <div class="about seven">
-	<h2><span>Today</span></h2>
-	<p id='rendered-text'><span>Software engineer at <a href="http://www.renderedtext.com" target="_blank">Render Text.</a></span></p>
-	<p><span>Mechanical watches enthusiast.</span></p> 
-	<p><span>Regular blood donor.</span></p>
-	<p><span>Lives with spouse Tanja in Novi Sad, Serbia.</span></p>
-      
-	<h2><span>Once</span></h2>
-	<p><span>Teaching assistant at Faculty of Technical Sciences, Novi Sad, Serbia.</span></p>
-	<p><span>PhD student and wannabe skydiver.</span></p>
-	<p><span>Long time volunteer at Red Cross, Sombor.</span></p>
-      </div>
-      
-    </div>
   </body>
 </html>
