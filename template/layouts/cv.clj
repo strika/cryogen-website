@@ -18,7 +18,7 @@
          :title (:title site)
          :type  "application/atom+xml"}]
 
- (css [(:css site ())])
+ (css ["http://fonts.googleapis.com/css?family=Kotta+One" (:css site ()) "/css/cv.css"])
  (css {:media "only screen and (max-device-width:480px)"} (:device-css site))]
 ; /head
 
@@ -34,9 +34,8 @@
      [:li [:a {:href "/cv.html"} "CV"]]
      [:li [:a {:href "/contact.html"} "Contact"]]]]
 
-   [:div {:class "main small-8"}
-    contents]
-
+    contents
+ 
    [:footer
     [:small "&copy; 2013 Nebojša Stričević"]])
  ; /container

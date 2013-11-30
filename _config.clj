@@ -26,10 +26,10 @@
         :charset    "utf-8"
         :site-title "There are ants on the page"
         :twitter    "nstricevic"
-        :css        ["http://fonts.googleapis.com/css?family=Josefin+Sans"
-                     "/css/main.css"
-                     "/css/extra.css"]
-        :device-css ["/css/smartphone.css"]
+        :css        ["http://fonts.googleapis.com/css?family=Kotta+One"
+                     "/css/foundation.min.css"
+                     "/css/style.css"]
+        :device-css []
         :js         ["/js/main.js"]}
 
  ;; post file compile hook
@@ -41,7 +41,6 @@
  ;; post setting
  ;;   default value: #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
  :post-filename-regexp #"(\d{4})[-_](\d{1,2})[-_](\d{1,2})[-_](.+)$"
- :post-filename-format "$(year)-$(month)/$(filename)"
 
  ;; post sort type (:date :name :title :date-desc :name-desc :title-desc)
  ;;   default value: :date-desc
