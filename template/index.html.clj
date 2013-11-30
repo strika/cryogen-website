@@ -1,5 +1,5 @@
 ; @layout  default
-; @title   home
+; @title   Home
 
 [:h1 "Posts"]
 (post-list)

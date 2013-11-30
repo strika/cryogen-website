@@ -27,10 +27,10 @@
  (container
    [:nav
     [:ul
-     [:li [:a {:href "#"} "Home"]]
-     [:li [:a {:href "#"} "About"]]
-     [:li [:a {:href "#"} "CV"]]
-     [:li [:a {:href "#"} "Contact"]]]]
+     [:li [:a {:href "/"} "Home"]]
+     [:li [:a {:href "/about.html"} "About"]]
+     [:li [:a {:href "/cv.html"} "CV"]]
+     [:li [:a {:href "/contact.html"} "Contact"]]]]
 
   contents)
  ; /container
