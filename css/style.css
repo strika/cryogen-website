@@ -7,10 +7,11 @@ body, html {
     font-family: 'Kotta One', serif;
     position: relative;
 }
+
 #ant {
     width: 100%;
     height: 100%;
-    opacity: 0.14;
+    opacity: 0.10;
     position: absolute;
 }
 
