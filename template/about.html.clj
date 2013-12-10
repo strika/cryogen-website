@@ -4,20 +4,17 @@
 [:div {:class "avatar"}]
 
 [:header
-  [:h1 "Nebojša Stričević"]]
+  [:h1 "Hi there!"]]
 
 [:p {:class "introduction"}
- "Lorem ipsum dolor sit amet, consectetur adipiscing.
- Integer nec odio. Praesent libero.
- Sed cursus ante dapibus diam. Sed nisi.
- Nulla quis sem at nibh elementum imperdiet."]
-                
-[:p "Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit."]
+ "Thanks for stopping by. My name is Nebojša Stričević, but friends call me Strika. So should you."]
 
-[:p "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam."]
+[:p "I live in Novi Sad, Serbia, with my wonderful wife Tanja and son Mihajlo."] 
 
-[:p "Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa."]
+[:p "I was lucky enough to own Commodore 64 when I was a kid. And even more that it came
+    with a book called \"What Can Commodore 64 Do?\", that I read so many times. Since then
+    my love for the world of computers never ended."]
 
-[:p "Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales."]
+[:p "These days I'm working as a web engineer at " (link "Rendered Text" "http://renderedtext.com") ", Novi Sad."]
 
-[:p " Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Ut ultrices ultrices enim..."]
+[:p "My long term life goal is to increase the number of stars I can see each day."]
