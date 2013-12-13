@@ -17,4 +17,7 @@
 
 [:p "These days I'm working as a web engineer at " (link "Rendered Text" "http://renderedtext.com") ", Novi Sad."]
 
+[:p "In free time, I enjoy coffee and black tea, dark chocolate, dark beer and " (link "pelinkovac" "https://en.wikipedia.org/wiki/Pelinkovac") ". "
+    "I'm also interested in mechanical watches and older cars."]
+
 [:p "My long term life goal is to increase the number of stars I can see each day."]
