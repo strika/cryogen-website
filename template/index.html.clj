@@ -14,8 +14,13 @@
 [:article {:class "experiments"}
  [:h1 "Projects and experiments"]
  [:p {:id "practicioner"} "A practicioner should never stop practicing"]
- [:p (link "Langton's ant" "https://github.com/strika/ant")]
- [:p (link "Blue Hood" "https://github.com/strika/bluehood")]]
+ [:p (link "There are ants on the page!" "/ant.html")]
+ [:p (link "Green Hood" "https://github.com/strika/greenhood")]
+ [:p (link "Blue Hood" "https://github.com/strika/bluehood")]
+ [:p (link "Project Euler solutions in Clojure" "https://github.com/strika/euler")]
+ [:p (link "Vim configuration" "https://github.com/strika/vimfiles")]
+ [:p (link "Dotfiles" "https://github.com/strika/dotfiles")]
+ [:p (link "This website source code" "https://github.com/strika/strika.github.com")]]
 ;/article
 
 (js ["/js/ant/lib/underscore-min.js"
@@ -23,23 +28,5 @@
      "/js/ant/src/model/Ant.js"
      "/js/ant/src/model/AntFactory.js"
      "/js/ant/src/model/World.js"
-     "/js/ant/src/view/WorldView.js"])
-
-[:script
- "
-  var paper = Raphael(document.getElementById('ant'), 800, 800),
-      world = new World(),
-      worldView = new WorldView(world, paper);
-      antFactory = new AntFactory(world);
-
-  var initAnt = function() {
-    var ant = antFactory.buildRandomAnt();
-    window.setInterval(function() { ant.move(); }, Math.random() * 1024);
-  };
-
-  setTimeout(initAnt, 1000);
-  setTimeout(initAnt, 2000);
-  setTimeout(initAnt, 3000);
-  setTimeout(initAnt, 4000);
- 
- "]
+     "/js/ant/src/view/WorldView.js"
+     "/js/AntMain.js"])
