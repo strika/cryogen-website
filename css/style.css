@@ -66,7 +66,7 @@ article a {
     font-size: 0.9em;
 }
 
-.posts p {
+.posts span {
     font-size: 1.1em;
 }
 
@@ -80,6 +80,11 @@ article a {
 
 .experiments {
     padding-top: 4em;
+}
+
+.experiments a {
+    display: block;
+    line-height: 1.8em;
 }
 
 time {

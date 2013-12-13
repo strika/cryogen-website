@@ -6,7 +6,7 @@
 
  [:ul
   (for [p (:posts site)]
-    [:p
+    [:span
      (link (:title p) (:url p))
      [:time (misaki.util.date/date->string (:date p))]])]]
 ;/article
@@ -14,13 +14,13 @@
 [:article {:class "experiments"}
  [:h1 "Projects and experiments"]
  [:p {:id "practicioner"} "A practicioner should never stop practicing"]
- [:p (link "There are ants on the page!" "/ant.html")]
- [:p (link "Green Hood" "https://github.com/strika/greenhood")]
- [:p (link "Blue Hood" "https://github.com/strika/bluehood")]
- [:p (link "Project Euler solutions in Clojure" "https://github.com/strika/euler")]
- [:p (link "Vim configuration" "https://github.com/strika/vimfiles")]
- [:p (link "Dotfiles" "https://github.com/strika/dotfiles")]
- [:p (link "This website source code" "https://github.com/strika/strika.github.com")]]
+ (link "There are ants on the page!" "/ant.html")
+ (link "Green Hood" "https://github.com/strika/greenhood")
+ (link "Blue Hood" "https://github.com/strika/bluehood")
+ (link "Project Euler solutions in Clojure" "https://github.com/strika/euler")
+ (link "Vim configuration" "https://github.com/strika/vimfiles")
+ (link "Dotfiles" "https://github.com/strika/dotfiles")
+ (link "This website source code" "https://github.com/strika/strika.github.com")]
 ;/article
 
 (js ["/js/ant/lib/underscore-min.js"
