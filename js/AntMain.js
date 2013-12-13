@@ -1,4 +1,4 @@
-var paper = Raphael(document.getElementById('ant'), 800, 800),
+var paper = Raphael(document.getElementById('ant'), window.width, window.height),
     world = new World(),
     worldView = new WorldView(world, paper);
     antFactory = new AntFactory(world);
