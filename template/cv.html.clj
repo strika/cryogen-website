@@ -9,9 +9,6 @@
   [:span "email"]
   (link "nebojsa.stricevic@gmail.com" "nebojsa.stricevic@gmail.com")]
  [:p
-  [:span "phone"]
-  "+381 64 375 10 85"]
- [:p
   [:span "github"]
   (link "http://github.com/strika" "http://github.com/strika")]]
 
@@ -20,16 +17,17 @@
   [:p "Employment"]]
  [:div {:class "right"}
   [:p {:class "big"} "February 2012 - present"]
-  [:p {:class "big"} "Software Engineer"]
+  [:p {:class "big"} "Web Engineer"]
   [:p "Rendered Text, " (link "http://renderedtext.com" "http://renderedtext.com") ", Novi Sad"]
   [:p "Web engineer, working close with clients on several web
-      applications - most notably Reservation Genie, a restaurant reservation
-      application (" (link "http://reservationgenie.com" "http://reservationgenie.com") ")."]
+      applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " (a continuous testing
+      service for Ruby applications) and " (link "Reservation Genie" "http://reservationgenie.com")
+      " (a restaurant reservation application)."]
   [:p {:class "big"} "October 2010 - February 2012"]
   [:p {:class "big"} "Teaching Assistant"]
   [:p "Faculty of  Technical Sciences, University of Novi Sad"]
   [:p "Was responsible for teaching several software engineering related
-      courses for students on third and fourth year of Bachelor studies"]]]
+      courses for students on third and fourth year of Bachelor studies."]]]
 
 [:div {:class "content"} 
  [:div {:class "left"}
@@ -41,16 +39,16 @@
       Faculty of Technical Sciences, University of Novi Sad, Serbia"]
   [:p "2005-2009: Bachelor With Honors in Electrical and Computer Engineering
       (Average grade 9.57/10.00), Faculty of Technical Sciences, University of Novi Sad, Serbia"]
-  [:p "2001-2005: Computer Technician, Technical School in Sombor, Serbia, best student in generation"]]]
+  [:p "2001-2005: Computer Technician (Average grade 5.00/5.00, best student in generation), Technical School in Sombor, Serbia"]]]
 
 [:div {:class "content"} 
  [:div {:class "left"}
   [:p "Professional Skills"]]
  [:div {:class "right"} 
-  [:p "Earned money with Ruby and Java. Played around with Clojure and several other languages."]
-  [:p "Uses following development tools, frameworks and libraries in daily work: Vim, Git, Tmux, Ruby on Rails, RSpec, Cucumber."]
-  [:p "Can handle JavaScript, jQuery, Jasmine, Backbone."]
-  [:p "Has experience with software modeling languages and tools: UML,ECore, Sybase PowerDesigner, EMF."]
+  [:p "Earned money with Ruby, JavaScript/CoffeeScript and Java. Played around with Clojure and several other languages."]
+  [:p "Uses following development tools, frameworks and libraries in daily work: Vim, Git, Tmux, Ruby on Rails, RSpec, Cucumber, Capistrano."]
+  [:p "Can handle tick client side appilcations (jQuery, Jasmine, Mocha, Chai, Sinon, Backbone)."]
+  [:p "Has experience with software modeling languages and tools: UML, ECore, Sybase PowerDesigner, EMF."]
   [:p "Can comfortably work in any operating system, but prefers GNU/Linux."]]]
 
 [:div {:class "content"}
