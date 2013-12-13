@@ -12,7 +12,7 @@
 ;/article
 
 [:article {:class "experiments"}
- [:h1 "Experiments"]
+ [:h1 "Projects and experiments"]
  [:p {:id "practicioner"} "A practicioner should never stop practicing"]
  [:p (link "Langton's ant" "https://github.com/strika/ant")]
  [:p (link "Blue Hood" "https://github.com/strika/bluehood")]]
