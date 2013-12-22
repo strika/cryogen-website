@@ -28,7 +28,8 @@
         :twitter    "nstricevic"
         :css        ["http://fonts.googleapis.com/css?family=Kotta+One"
                      "/css/foundation.min.css"
-                     "/css/style.css"]
+                     "/css/style.css"
+                     "/css/desert.css"]
         :device-css []
         :js         ["/js/main.js"]}
 
