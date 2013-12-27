@@ -6,9 +6,10 @@
 
  [:ul
   (for [p (:posts site)]
-    [:span
-     (link (:title p) (:url p))
-     [:time (misaki.util.date/date->string (:date p))]])]]
+    [:li
+     [:span
+       (link (:title p) (:url p))
+       [:time (misaki.util.date/date->string (:date p))]]])]]
 ;/article
 
 [:article {:class "experiments"}

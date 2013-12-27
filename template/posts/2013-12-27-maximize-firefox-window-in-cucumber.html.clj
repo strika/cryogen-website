@@ -22,11 +22,14 @@
 (p "Final solution was to maximize Firefox window just before drag is initiated:")
 
 #-RUBY
+
+# in a step definition
 page.driver.browser.manage.window.maximize
+
 RUBY
 
 [:br]
 
 (p "Sometimes it pays off to follow how a test is executed in a browser window.
    And for some tests you really need to start \"thinking\" like a machine to
-   understand what's going on.")
+   understand what's going on inside a test.")

@@ -7,6 +7,7 @@
    interesting in the Firefox window that runs the test - during the drag and drop
    execution scroll bar moves.</p><p class="paragraph">The thing is that Firefox window was small. After drag started, small scrolling happened 
    to reveal the drop target. To make the scenario pass I had to make both the drag node and
-   the drop node visible from the start.</p><p class="paragraph">Final solution was to maximize Firefox window just before drag is initiated:</p><pre class="prettyprint">page.driver.browser.manage.window.maximize</pre><br><p class="paragraph">Sometimes it pays off to follow how a test is executed in a browser window.
+   the drop node visible from the start.</p><p class="paragraph">Final solution was to maximize Firefox window just before drag is initiated:</p><pre class="prettyprint"># in a step definition
+page.driver.browser.manage.window.maximize</pre><br><p class="paragraph">Sometimes it pays off to follow how a test is executed in a browser window.
    And for some tests you really need to start "thinking" like a machine to
-   understand what's going on.</p></div></article></div><footer><small>&copy; 2013 Nebojša Stričević</small></footer></div><script src="/js/prettify.js" type="text/javascript"></script><script src="/js/lang-clj.js" type="text/javascript"></script><script src="/js/main.js" type="text/javascript"></script></body></html>
+   understand what's going on inside a test.</p></div></article></div><footer><small>&copy; 2013 Nebojša Stričević</small></footer></div><script src="/js/prettify.js" type="text/javascript"></script><script src="/js/lang-clj.js" type="text/javascript"></script><script src="/js/main.js" type="text/javascript"></script></body></html>
