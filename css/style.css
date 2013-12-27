@@ -124,3 +124,8 @@ footer {
     margin: 2em;
     color: #943E0F;
 }
+
+pre.prettyprint {
+  margin: 10px;
+  padding: 10px;
+}
