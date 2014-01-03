@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     background-color: #fdf6e3;
     color: #657b83;
-    font-family: 'Kotta One', serif;
+    font-family: 'Imprima', sans-serif;
     position: relative;
 }
 
@@ -36,6 +36,7 @@ nav li a {
     text-decoration: none;
     color: #657b83;
     margin: 1.5em;
+    font-family: 'Kotta One', serif;
 }
 
 nav li a:hover, article a:hover {
@@ -51,9 +52,13 @@ nav li a:hover, article a:hover {
 h1 {
     display: inline-block;
     font-size: 1.4em;
-    font-family: inherit;
+    font-family: 'Kotta One', serif;
     font-weight: normal;
     color: #943E0F;
+}
+
+p {
+    font-family: 'Imprima', sans-serif;
 }
 
 .introduction {
