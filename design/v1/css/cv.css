@@ -1,0 +1,54 @@
+body, html {
+    font-size: 1.1em;
+}
+
+nav li {
+    font-size: 25px;
+}
+
+.container {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.basic-info {
+    width: 450px;
+    margin: auto;
+    margin-top: 4em;
+}
+
+a {
+    color: #943E0F;
+}
+
+.basic-info span {
+    display: inline-block;
+    width: 120px;
+}
+
+.content {
+    width: 850px;
+    margin: auto;
+    margin-top: 3em;
+    overflow: hidden;
+}
+
+.content .left {
+    float: left;
+    width: 150px;
+    height: auto;
+    text-align: right;
+}
+
+.content .right {
+    width: 650px;
+    float: right;
+}
+
+.big {
+    font-size: 1.2em;
+}
+
+span, .left {
+    font-style: italic;
+}
