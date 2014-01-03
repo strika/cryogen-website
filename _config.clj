@@ -26,9 +26,7 @@
         :charset    "utf-8"
         :site-title "There are ants on the page"
         :twitter    "nstricevic"
-        :css        ["http://fonts.googleapis.com/css?family=Kotta+One"
-                     "http://fonts.googleapis.com/css?family=Imprima"
-                     "/css/foundation.min.css"
+        :css        ["/css/foundation.min.css"
                      "/css/style.css"
                      "/css/desert.css"]
         :device-css []

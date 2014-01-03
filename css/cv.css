@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=Kotta+One);
 body, html {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 nav li {
@@ -46,7 +48,7 @@ a {
 }
 
 .big {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 span, .left {
