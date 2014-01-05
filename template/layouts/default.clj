@@ -22,7 +22,7 @@
  (css {:media "only screen and (max-device-width:480px)"} (:device-css site))]
 ; /head
 
-[:body
+[:body {:id (:page-id site)}
 
  [:div {:id "ant"}]
 

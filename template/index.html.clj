@@ -1,5 +1,6 @@
 ; @layout  default
 ; @title   Home
+; @page-id home
 
 [:article {:class "posts"}
  [:h1 "Posts"]
