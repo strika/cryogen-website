@@ -68,7 +68,7 @@ p {
     white-space: pre-line;
 }
 
-body#home article a {
+article a {
     color: #657b83;
     font-size: 0.9em;
 }

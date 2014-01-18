@@ -1,31 +1,34 @@
 ; @layout  cv
 ; @title   CV
 
+[:h1 {:id "name"} "Nebojša Stričević"]
+
 [:div {:class "basic-info"}
  [:p
   [:span "info"]
   "Born in Sombor, Serbia on July 7, 1986"]
  [:p
   [:span "email"]
-  (link "nebojsa.stricevic@gmail.com" "nebojsa.stricevic@gmail.com")]
+  (link {:class "hide-print"} "nebojsa.stricevic@gmail.com" "nebojsa.stricevic@gmail.com")]
+ [:p
+  [:span "www"]
+  (link {:class "hide-print"} "http://nebojsa.stricevic.info" "http://nebojsa.stricevic.info")]
  [:p
   [:span "github"]
-  (link "http://github.com/strika" "http://github.com/strika")]]
+  (link {:class "hide-print"} "http://github.com/strika" "http://github.com/strika")]]
 
 [:div {:class "content"}
  [:div {:class "left"}
   [:p "Employment"]]
  [:div {:class "right"}
   [:p {:class "big"} "February 2012 - present"]
-  [:p {:class "big"} "Web Engineer"]
-  [:p "Rendered Text, " (link "http://renderedtext.com" "http://renderedtext.com") ", Novi Sad"]
+  [:p "Web Engineer at Rendered Text, " (link "http://renderedtext.com" "http://renderedtext.com") ", Novi Sad"]
   [:p "Web engineer, working close with clients on several web
-      applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " (a continuous testing
-      service for Ruby applications) and " (link "Reservation Genie" "http://reservationgenie.com")
-      " (a restaurant reservation application)."]
+      applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " - a continuous testing
+      service and " (link "Reservation Genie" "http://reservationgenie.com")
+      " - a restaurant reservation application."]
   [:p {:class "big"} "October 2010 - February 2012"]
-  [:p {:class "big"} "Teaching Assistant"]
-  [:p "Faculty of  Technical Sciences, University of Novi Sad"]
+  [:p "Teaching Assistant at Faculty of  Technical Sciences, University of Novi Sad"]
   [:p "Was responsible for teaching several software engineering related
       courses for students on third and fourth year of Bachelor studies."]]]
 
@@ -56,3 +59,8 @@
   [:p "Other"]]
  [:div {:class "right"}
   [:p "Speaks Serbian and English."]]]
+
+[:div {:class "content"}
+ [:div {:class "right"}
+   [:p
+    (link "Download PDF" "/nebojsa-stricevic-cv.pdf")]]]

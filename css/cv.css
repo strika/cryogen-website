@@ -4,6 +4,10 @@ body, html {
     font-size: 1em;
 }
 
+#name {
+    display: none;
+}
+
 nav li {
     font-size: 25px;
 }
@@ -54,3 +58,70 @@ a {
 span, .left {
     font-style: italic;
 }
+
+@media print {
+    body {
+        background-color: white;
+        font-size: 12pt;
+    }
+    
+    html, body, .container {
+        height: auto;
+    }
+    
+    .container {
+        padding-bottom: 0;
+    }
+    
+    .basic-info {
+        margin-top: 2em;
+    }
+    
+    .content {
+        margin-top: 1.5em;
+    }
+
+    #name {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.7em;
+        margin-top: 1.7em;
+    }
+    
+    nav, footer {
+        display: none;
+    }
+    
+    .big {
+        font-size: 1em;
+    }
+    
+    p {
+        padding: 5px 3px 5px 0;
+        margin: 0;
+    }
+    
+    a { 
+        background: transparent; 
+        text-decoration: none;
+        color: #943E0F !important;
+    }
+    
+    a[href^="/"]:after, a.hide-print:link:after {
+        content: "";
+        color: #943E0F !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
