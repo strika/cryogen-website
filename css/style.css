@@ -1,10 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=Kotta+One);
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: #fdf6e3;
     color: #657b83;
-    font-family: 'Imprima', sans-serif;
+    font-family: 'PT Serif', serif;
     position: relative;
 }
 
@@ -58,7 +60,7 @@ h1 {
 }
 
 p {
-    font-family: 'Imprima', sans-serif;
+    font-family: 'PT Serif', serif;
 }
 
 .introduction {
@@ -66,7 +68,7 @@ p {
     white-space: pre-line;
 }
 
-article a {
+body#home article a {
     color: #657b83;
     font-size: 0.9em;
 }

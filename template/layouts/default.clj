@@ -22,7 +22,7 @@
  (css {:media "only screen and (max-device-width:480px)"} (:device-css site))]
 ; /head
 
-[:body
+[:body {:id (:page-id site)}
 
  [:div {:id "ant"}]
 
@@ -38,7 +38,7 @@
     contents]
 
    [:footer
-    [:small "&copy; 2013 Nebojša Stričević"]])
+    [:small "&copy; 2014 Nebojša Stričević"]])
  ; /container
 
  (js ["/js/prettify.js"
