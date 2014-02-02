@@ -59,6 +59,14 @@ h1 {
     color: #943E0F;
 }
 
+h2 {
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: 'Kotta One', serif;
+    font-weight: normal;
+    color: #943E0F;
+}
+
 p {
     font-family: 'PT Serif', serif;
 }

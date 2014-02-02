@@ -47,7 +47,7 @@ RUBY
 (p "Rake is using Ruby's flexible syntax to create a comfortable DSL for writing tasks
    (that may look strange at first).")
 
-[:h1 "Rails' :environment task"]
+[:h2 "Rails' :environment task"]
 
 (p "A special task that you probably encountered before is the :environment task:")
 
@@ -64,7 +64,7 @@ RUBY
 (p "The :environment task loads the Rails' environment so all you code and gems are available
    in :my_task.")
 
-[:h1 "When not to use :environment task"]
+[:h2 "When not to use :environment task"]
 
 (p "If you're writing a task that needs to be executed periodically, in short
    intervals and doesn't depend on lots of other code, don't use :environment task.

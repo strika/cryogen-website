@@ -10,10 +10,10 @@ end&lt;/pre&gt;&lt;br /&gt;&lt;p class=&quot;paragraph&quot;&gt;And when you nee
    can use an array:&lt;/p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;task :my_task =&amp;gt; [:clean, :prepare, :setup_logging] do
   # do some stuff
 end&lt;/pre&gt;&lt;br /&gt;&lt;p class=&quot;paragraph&quot;&gt;Rake is using Ruby's flexible syntax to create a comfortable DSL for writing tasks
-   (that may look strange at first).&lt;/p&gt;&lt;h1&gt;Rails' :environment task&lt;/h1&gt;&lt;p class=&quot;paragraph&quot;&gt;A special task that you probably encountered before is the :environment task:&lt;/p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;task :my_task =&amp;gt; :environment do
+   (that may look strange at first).&lt;/p&gt;&lt;h2&gt;Rails' :environment task&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;A special task that you probably encountered before is the :environment task:&lt;/p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;task :my_task =&amp;gt; :environment do
   # do some stuff
 end&lt;/pre&gt;&lt;br /&gt;&lt;p class=&quot;paragraph&quot;&gt;The :environment task loads the Rails' environment so all you code and gems are available
-   in :my_task.&lt;/p&gt;&lt;h1&gt;When not to use :environment task&lt;/h1&gt;&lt;p class=&quot;paragraph&quot;&gt;If you're writing a task that needs to be executed periodically, in short
+   in :my_task.&lt;/p&gt;&lt;h2&gt;When not to use :environment task&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;If you're writing a task that needs to be executed periodically, in short
    intervals and doesn't depend on lots of other code, don't use :environment task.
    Load dependencies manually instead. Running a task that depends on :environment
    can take 20-30 seconds or more since it's starting the whole Rails and loading
