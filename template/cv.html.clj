@@ -50,7 +50,7 @@
  [:div {:class "right"} 
   [:p "Earned money with Ruby, JavaScript/CoffeeScript and Java. Played around with Clojure and several other languages."]
   [:p "Uses following development tools, frameworks and libraries in daily work: Vim, Git, Tmux, Ruby on Rails, RSpec, Cucumber, Capistrano."]
-  [:p "Can handle tick client side appilcations (jQuery, Jasmine, Mocha, Chai, Sinon, Backbone)."]
+  [:p "Can handle tick client side applications (jQuery, Jasmine, Mocha, Chai, Sinon, Backbone)."]
   [:p "Has experience with software modeling languages and tools: UML, ECore, Sybase PowerDesigner, EMF."]
   [:p "Can comfortably work in any operating system, but prefers GNU/Linux."]]]
 
