@@ -16,9 +16,8 @@
 [:article {:class "experiments"}
  [:h1 "Projects and experiments"]
  [:p {:id "practicioner"} "A practicioner should never stop practicing"]
+ (link "servisne.info" "https://github.com/strika/servisne.info")
  (link "There are ants on the page!" "/ant.html")
- (link "Green Hood" "https://github.com/strika/greenhood")
- (link "Blue Hood" "https://github.com/strika/bluehood")
  (link "Project Euler solutions in Clojure" "https://github.com/strika/euler")
  (link "Vim configuration" "https://github.com/strika/vimfiles")
  (link "Dotfiles" "https://github.com/strika/dotfiles")
