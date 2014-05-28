@@ -15,7 +15,13 @@
   (link {:class "hide-print"} "http://nebojsa.stricevic.info" "http://nebojsa.stricevic.info")]
  [:p
   [:span "github"]
-  (link {:class "hide-print"} "http://github.com/strika" "http://github.com/strika")]]
+  (link {:class "hide-print"} "http://github.com/strika" "http://github.com/strika")]
+ [:p
+  [:span "linkedin"]
+  (link {:class "hide-print"} "http://rs.linkedin.com/in/nebojsastricevic/" "http://rs.linkedin.com/in/nebojsastricevic/")]
+ [:p
+  [:span "careers 2.0"]
+  (link {:class "hide-print"} "http://careers.stackoverflow.com/strika" "http://careers.stackoverflow.com/strika")]]
 
 [:div {:class "content"}
  [:div {:class "left"}
@@ -26,7 +32,7 @@
   [:p "Web engineer, working close with clients on several web
       applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " - a continuous testing
       service and " (link "Reservation Genie" "http://reservationgenie.com")
-      " - a restaurant reservation application."]
+      " - a restaurant reservation web application."]
   [:p {:class "big"} "October 2010 - February 2012"]
   [:p "Teaching Assistant at Faculty of  Technical Sciences, University of Novi Sad"]
   [:p "Was responsible for teaching several software engineering related
@@ -63,4 +69,4 @@
 [:div {:class "content"}
  [:div {:class "right"}
    [:p
-    (link "Download PDF" "/nebojsa-stricevic-cv.pdf")]]]
+    (link {:class "hide-print"} "Download PDF" "/nebojsa-stricevic-cv.pdf")]]]
