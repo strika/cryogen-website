@@ -26,7 +26,8 @@
         :charset    "utf-8"
         :site-title "There are ants on the page"
         :twitter    "nstricevic"
-        :css        ["/css/foundation.min.css"
+        :css        ["/fonts/fira/fira.css"
+                     "/css/foundation.min.css"
                      "/css/style.css"
                      "/css/desert.css"]
         :device-css []
