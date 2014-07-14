@@ -90,6 +90,10 @@ article a {
     font-size: 0.8em;
 }
 
+.posts li {
+  list-style: none;
+}
+
 #practicioner {
     color: #943E0F;
 }
