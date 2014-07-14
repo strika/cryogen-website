@@ -18,7 +18,6 @@
          :title (:title site)
          :type  "application/atom+xml"}]
 
- (css ["http://fonts.googleapis.com/css?family=Kotta+One" (:css site ()) "/css/cv.css"])
  (css {:media "only screen and (max-device-width:480px)"} (:device-css site))]
 ; /head
 
