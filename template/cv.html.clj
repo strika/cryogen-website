@@ -28,7 +28,7 @@
   [:p "Employment"]]
  [:div {:class "right"}
   [:p {:class "big"} "February 2012 - present"]
-  [:p "Web Engineer at Rendered Text, " (link "http://renderedtext.com" "http://renderedtext.com") ", Novi Sad"]
+  [:p "Web Engineer at " (link "Rendered Text" "http://renderedtext.com") ", Novi Sad"]
   [:p "Web engineer, working close with clients on several web
       applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " - a continuous testing
       service and " (link "Reservation Genie" "http://reservationgenie.com")

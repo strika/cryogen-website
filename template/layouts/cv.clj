@@ -18,6 +18,7 @@
          :title (:title site)
          :type  "application/atom+xml"}]
 
+ (css [(:css site ()) "/css/cv.css"])
  (css {:media "only screen and (max-device-width:480px)"} (:device-css site))]
 ; /head
 
