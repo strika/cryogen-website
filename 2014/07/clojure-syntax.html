@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initiali-scale=1.0, user-scalable=yes" name="viewport"><title>There are ants on the page - Clojure Syntax - From Empty List To Macros</title><link href="/favicon.ico" rel="shortcut icon"><link href="/atom.xml" rel="alternate" title="Clojure Syntax - From Empty List To Macros" type="application/atom+xml"><link href="/fonts/fira/fira.css" rel="stylesheet" type="text/css"><link href="/css/foundation.min.css" rel="stylesheet" type="text/css"><link href="/css/style.css" rel="stylesheet" type="text/css"><link href="/css/desert.css" rel="stylesheet" type="text/css"></head><body><div id="ant"></div><div class="container"><nav><ul><li><a href="/">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/cv.html">CV</a></li><li><a href="/contact.html">Contact</a></li></ul></nav><div class="main small-8"><article><div class="page-header"><h1>Clojure Syntax - From Empty List To Macros</h1><p class="date">14 Jul 2014</p></div><div class="post"><p class="paragraph">Few months ago I gave a talk at <a href="http://renderedtext.com/blog/2013/12/19/ctrl-flow-notes/">Ctrl+Flow</a>, a local hackers metup organized by <a href="http://renderedtext.com">Rendered Text</a>. I'm writing the core of the talk here for memory and future reference.</p><h2>Clojure Syntax</h2><pre class="prettyprint lang-clj">(defn- fib-iter
+  [max n i j]
+  (if (= n max)
+    j
+    (recur max
+           (inc n)
+           j
+           (+ i j))))</pre><p class="paragraph">One of the most repealing properties for Clojure for newcomers is it's syntax. If you didn't have an exposure to a Lisp before, it looks fairly alien with all the parenthesis. Our goal here is to discover where does the syntax coming from and why is it so different from other languages out there.</p><h2>Clojure Reader</h2><p class="paragraph">First, let's introduce a character.</p><p class="paragraph"><img alt="Robot image, representing Clojure Reader" src="http://robohash.org/Strika"></p><p class="paragraph">The friendly looking robot is Clojure Reader. He's job is similar like interpreters in other languages. You give him a piece of code, it executes it and returns you the result. But there is one significant difference. While other interpreters eat lines of code - Clojure Reader eats lists!</p><p class="paragraph">So the first thing to learn from Clojure Syntax is the simplest, most basic list - an empty list:</p><pre class="prettyprint lang-clj">()</pre><p class="paragraph">Two characters, in it's glory - an open parenthesis and a closed parenthesis.</p><h2>Lists Represent Code</h2><p class="paragraph">Let's try to add a two numbers with Clojure. Since Clojure Reader eats lists, you need construct a list with 3 items - a + sign, a number and another number.</p><pre class="prettyprint lang-clj">(+ 1 2)
+3</pre><p class="paragraph">And Clojure Reader will happily return 3. It works. Let's try more:</p><pre class="prettyprint lang-clj">(- 5 1)
+4
+
+(+ 1 2 3)
+6</pre><p class="paragraph">We can already see a pattern here. If you want the Clojure Reader to execute a function, you construct a list where first item of the list is the function and other items of the list are arguments to the function. An interesting thing to note is that + and - are just regular functions that can accept more than 2 arguments.</p><h2>Lists of Lists of Lists</h2><p class="paragraph">Let's examine a more complex arithmetic expression:</p><pre class="prettyprint lang-clj">(* (- 12 8) (+ 1 2))
+12</pre><p class="paragraph">Clojure evaluates complex expressions in steps:</p><pre class="prettyprint lang-clj">(* (- 12 8) (+ 1 2))
+(* 4 (+ 1 2))
+(* 4 3)
+12</pre><p class="paragraph">As with most modern programming languages, Clojure first evaluates a function arguments and then the function itself.</p><p class="paragraph">As saw before, + and - are just functions. They are not operators. And there are no operator precedence in Clojure. It's not needed. Parenthesis are not used to group expressions, but to create lists.</p><h2>Variables and Functions</h2><pre class="prettyprint lang-clj">(def a 3)
+(def b 4)
+(+ a b)
+7</pre><p class="paragraph">To define a variable in Clojure you should construct a list where first item of the list is a keyword <em>def</em>, followed by the variable name, followed by the variable value.</p><p class="paragraph">Variables can also hold functions:</p><pre class="prettyprint lang-clj">(def add-2
+  (fn [n]
+    (+ n 2)))
+
+(add-2 7)
+9</pre><pre class="prettyprint lang-clj">(def more-than-5?
+  (fn [n]
+    (if (&gt; n 5)
+      &quot;YES&quot;
+      &quot;NO&quot;)))
+
+(more-than-5? 10)
+&quot;YES&quot;</pre><h2>Lists For Collections</h2><p class="paragraph">Of course, lists can be used for more than code. They can also hold <em>just</em> data. But, creating a list of numbers with what we have so far may end up unexpectedly:</p><pre class="prettyprint lang-clj">(def numbers (1 2 3 4 5))
+Error! There is no function &quot;1&quot;.</pre><p class="paragraph">The problem is that Clojure follows a hard rule - it will try to execute a first item of a list as it were a function. You need to tell Clojure not to execute a list with ' operator.</p><pre class="prettyprint lang-clj">(def numbers '(1 2 3 4 5))
+
+(count numbers)
+5
+
+(first numbers)
+1
+
+(rest numbers)
+(2 3 4 5)
+
+(map add-2 numbers)
+(3 4 5 6 7)</pre><p class="paragraph">In the last example, the <em>map</em> function executes the <em>add-2</em> function on all items of <em>numbers</em>.</p><h2>What Can You Put In a List?</h2><p class="paragraph">Clojure is a dynamically typed language so lists can hold different types. It's interesting that a list can hold some unexpected stuff too:</p><pre class="prettyprint lang-clj">(def some-code '(+ 1 2))
+
+(first some-code)
++
+
+(rest some-code)
+(1 2)
+
+(eval some-code)
+3
+
+(def new-code
+  (cons '-
+        (rest some-code)))
+
+(println new-code)
+(- 1 2)
+
+(eval new-code)
+-1</pre><p class="paragraph">You can put a piece of code in a list,  play with it and execute it. In the example, we removed + from the <em>some-code</em>, inserted - instead and created the <em>new-code</em>.</p><p class="paragraph">You may point out that a similar thing is available in Ruby, JavaScript and other languages. There, you would put a code in a string and execute it. Difference, though, is that with Clojure, you have all the functions available to work with collections to mold the code. In other languages you have only the functions that work with strings.</p><h2>Extending the Language</h2><p class="paragraph">We already saw how <em>if</em> in Clojure looks like:</p><pre class="prettyprint lang-clj">(if (= 1 1)
+  (println &quot;1 is indeed 1&quot;))
+&quot;1 is indeed 1&quot;</pre><p class="paragraph">Let's try to create <em>unless</em> in Clojure:</p><pre class="prettyprint lang-clj">(unless (= 1 1)
+  (println &quot;1 is not really 1&quot;))</pre><p class="paragraph">We could try with a function:</p><pre class="prettyprint lang-clj">(def unless
+  (function [condition code]
+            (if (not condition)
+              code)))</pre><p class="paragraph">What happens when we try to execute it?</p><pre class="prettyprint lang-clj">(unless (= 1 1)
+  (println &quot;1 is not really 1&quot;))
+&quot;1 is not really 1&quot;</pre><p class="paragraph">Although the condition is true, Clojure returned the body of <em>unless</em>. Problem is that, as we said before, Clojure first executed arguments of a function and then the function itself. This means that Clojure first executed <cite>(println 1 is not really 1)</cite> and then the <em>unless</em> function itself. It's obvious <em>unless</em> can't be implemented with a function.</p><h2>Macros</h2><p class="paragraph">To implement <em>unless</em> we need to use macros.</p><pre class="prettyprint lang-clj">(defmacro unless [condition code]
+  '(if (not ~condition)
+     ~code))</pre><p class="paragraph">Macros are used to transform the code and they don't execute parameters. So an <em>unless</em> call:</p><pre class="prettyprint lang-clj">(unless (= 1 1)
+  (println &quot;1 is not really 1&quot;))</pre><p class="paragraph">would first be transformed to:</p><pre class="prettyprint lang-clj">(if (not (= 1 1))
+  (println &quot;1 is not really 1&quot;))</pre><p class="paragraph">and then executed, which would produce the desired result.</p><p class="paragraph">Macros allow you to define a features that look like they were included in the language itself - to extend the language. Our <em>unless</em> macro looks similar to <em>if</em>. You can't tell it wasn't shipped with Clojure.</p><h2>Why Macros?</h2><p class="paragraph">In 1996, Java appeared with <em>for</em> loop. In 2004 Java received an upgraded <em>for-each</em> loop.</p><pre class="prettyprint">// 1996.
+for (int i = 0; i &lt; collection.size(); i++) {
+  SomeType var = collection.get(i);
+  ...
+}
+
+// 2004.
+for (SomeType var : collection) {
+  ...
+}</pre><p class="paragraph">It took years to add the upgraded loop to Java. Is there a way you can add a similar feature to the language yourself? You would need to open the Java compiler, to learn the bytecode and to master the language Java was implemented in. With Clojure, you can implement the <em>for-each</em> loop with a macro in just few lines of Clojure:</p><pre class="prettyprint lang-clj">(defmacro foreach [[sym coll] &amp; body]
+  `(loop [coll# ~coll]
+     (when-let [[~sym &amp; xs#] (seq coll#)]
+       ~@body
+       (recur xs#))))
+
+(foreach [i numbers]
+         (println i))</pre><p class="paragraph">There are few funny looking characters in the implementation, but it's just 5 lines of code. Any devoted Clojure developer could do it.</p><p class="paragraph">Clojure's extensibility comes from the fact that Clojure code is made of Clojure lists. Code is data. And that's why macros can transform code into other code.</p><p class="paragraph">Now you know when you see a lot of parenthesis there are no reason to frown. It's just lists of lists. Data. Code.</p></div></article><br><div class="comment"><p>Do you have a comment? Feel free to send me an <a href="mailto:nebojsa.stricevic@gmail.com">email</a> or message me at <a href="http://twitter.com/nstricevic">@nstricevic</a>.</p></div></div><footer><small>&copy; 2014 Nebojša Stričević</small></footer></div><script src="/js/prettify.js" type="text/javascript"></script><script src="/js/lang-clj.js" type="text/javascript"></script><script src="/js/main.js" type="text/javascript"></script></body></html>
