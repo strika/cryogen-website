@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>There are ants on the page</title><link href="http://nebojsa.stricevic.info/atom.xml" rel="self" /><link href="http://nebojsa.stricevic.info" /><updated></updated><id>http://nebojsa.stricevic.info</id><author><name>@nstricevic</name></author><entry><title>Rake and Rails environment</title><link>http://nebojsa.stricevic.info/2014/02/rake-and-rails-enviroment.html</link><updated>2014-02-02T00:00:00</updated><id>http://nebojsa.stricevic.info/2014/02/rake-and-rails-enviroment.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;I've been using Rake daily for more than 2 years now,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>There are ants on the page</title><link href="http://nebojsa.stricevic.info/atom.xml" rel="self" /><link href="http://nebojsa.stricevic.info" /><updated></updated><id>http://nebojsa.stricevic.info</id><author><name>@nstricevic</name></author><entry><title>Clojure Syntax - From Empty List To Macros</title><link>http://nebojsa.stricevic.info/2014/07/clojure-syntax.html</link><updated>2014-07-14T00:00:00</updated><id>http://nebojsa.stricevic.info/2014/07/clojure-syntax.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;Few months ago I gave a talk at &lt;a href=&quot;http://renderedtext.com/blog/2013/12/19/ctrl-flow-notes/&quot;&gt;Ctrl+Flow&lt;/a&gt;, a local hackers metup organized by &lt;a href=&quot;http://renderedtext.com&quot;&gt;Rendered Text&lt;/a&gt;. I'm writing the core of the talk here for memory and future reference.&lt;/p&gt;&lt;h2&gt;Clojure Syntax&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(defn- fib-iter
+  [max n i j]
+  (if (= n max)
+    j
+    (recur max
+           (inc n)
+           j
+           (+ i j))))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;One of the most repealing properties for Clojure for newcomers is it's syntax. If you didn't have an exposure to a Lisp before, it looks fairly alien with all the parenthesis. Our goal here is to discover where does the syntax coming from and why is it so different from other languages out there.&lt;/p&gt;&lt;h2&gt;Clojure Reader&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;First, let's introduce a character.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;&lt;img alt=&quot;Robot image, representing Clojure Reader&quot; src=&quot;http://robohash.org/Strika&quot; /&gt;&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;The friendly looking robot is Clojure Reader. He's job is similar like interpreters in other languages. You give him a piece of code, it executes it and returns you the result. But there is one significant difference. While other interpreters eat lines of code - Clojure Reader eats lists!&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;So the first thing to learn from Clojure Syntax is the simplest, most basic list - an empty list:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;()&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;Two characters, in it's glory - an open parenthesis and a closed parenthesis.&lt;/p&gt;&lt;h2&gt;Lists Represent Code&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;Let's try to add a two numbers with Clojure. Since Clojure Reader eats lists, you need construct a list with 3 items - a + sign, a number and another number.&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(+ 1 2)
+3&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;And Clojure Reader will happily return 3. It works. Let's try more:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(- 5 1)
+4
+
+(+ 1 2 3)
+6&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;We can already see a pattern here. If you want the Clojure Reader to execute a function, you construct a list where first item of the list is the function and other items of the list are arguments to the function. An interesting thing to note is that + and - are just regular functions that can accept more than 2 arguments.&lt;/p&gt;&lt;h2&gt;Lists of Lists of Lists&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;Let's examine a more complex arithmetic expression:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(* (- 12 8) (+ 1 2))
+12&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;Clojure evaluates complex expressions in steps:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(* (- 12 8) (+ 1 2))
+(* 4 (+ 1 2))
+(* 4 3)
+12&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;As with most modern programming languages, Clojure first evaluates a function arguments and then the function itself.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;As saw before, + and - are just functions. They are not operators. And there are no operator precedence in Clojure. It's not needed. Parenthesis are not used to group expressions, but to create lists.&lt;/p&gt;&lt;h2&gt;Variables and Functions&lt;/h2&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(def a 3)
+(def b 4)
+(+ a b)
+7&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;To define a variable in Clojure you should construct a list where first item of the list is a keyword &lt;em&gt;def&lt;/em&gt;, followed by the variable name, followed by the variable value.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;Variables can also hold functions:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(def add-2
+  (fn [n]
+    (+ n 2)))
+
+(add-2 7)
+9&lt;/pre&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(def more-than-5?
+  (fn [n]
+    (if (&amp;gt; n 5)
+      &amp;quot;YES&amp;quot;
+      &amp;quot;NO&amp;quot;)))
+
+(more-than-5? 10)
+&amp;quot;YES&amp;quot;&lt;/pre&gt;&lt;h2&gt;Lists For Collections&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;Of course, lists can be used for more than code. They can also hold &lt;em&gt;just&lt;/em&gt; data. But, creating a list of numbers with what we have so far may end up unexpectedly:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(def numbers (1 2 3 4 5))
+Error! There is no function &amp;quot;1&amp;quot;.&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;The problem is that Clojure follows a hard rule - it will try to execute a first item of a list as it were a function. You need to tell Clojure not to execute a list with ' operator.&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(def numbers '(1 2 3 4 5))
+
+(count numbers)
+5
+
+(first numbers)
+1
+
+(rest numbers)
+(2 3 4 5)
+
+(map add-2 numbers)
+(3 4 5 6 7)&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;In the last example, the &lt;em&gt;map&lt;/em&gt; function executes the &lt;em&gt;add-2&lt;/em&gt; function on all items of &lt;em&gt;numbers&lt;/em&gt;.&lt;/p&gt;&lt;h2&gt;What Can You Put In a List?&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;Clojure is a dynamically typed language so lists can hold different types. It's interesting that a list can hold some unexpected stuff too:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(def some-code '(+ 1 2))
+
+(first some-code)
++
+
+(rest some-code)
+(1 2)
+
+(eval some-code)
+3
+
+(def new-code
+  (cons '-
+        (rest some-code)))
+
+(println new-code)
+(- 1 2)
+
+(eval new-code)
+-1&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;You can put a piece of code in a list,  play with it and execute it. In the example, we removed + from the &lt;em&gt;some-code&lt;/em&gt;, inserted - instead and created the &lt;em&gt;new-code&lt;/em&gt;.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;You may point out that a similar thing is available in Ruby, JavaScript and other languages. There, you would put a code in a string and execute it. Difference, though, is that with Clojure, you have all the functions available to work with collections to mold the code. In other languages you have only the functions that work with strings.&lt;/p&gt;&lt;h2&gt;Extending the Language&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;We already saw how &lt;em&gt;if&lt;/em&gt; in Clojure looks like:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(if (= 1 1)
+  (println &amp;quot;1 is indeed 1&amp;quot;))
+&amp;quot;1 is indeed 1&amp;quot;&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;Let's try to create &lt;em&gt;unless&lt;/em&gt; in Clojure:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(unless (= 1 1)
+  (println &amp;quot;1 is not really 1&amp;quot;))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;We could try with a function:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(def unless
+  (function [condition code]
+            (if (not condition)
+              code)))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;What happens when we try to execute it?&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(unless (= 1 1)
+  (println &amp;quot;1 is not really 1&amp;quot;))
+&amp;quot;1 is not really 1&amp;quot;&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;Although the condition is true, Clojure returned the body of &lt;em&gt;unless&lt;/em&gt;. Problem is that, as we said before, Clojure first executed arguments of a function and then the function itself. This means that Clojure first executed &lt;cite&gt;(println 1 is not really 1)&lt;/cite&gt; and then the &lt;em&gt;unless&lt;/em&gt; function itself. It's obvious &lt;em&gt;unless&lt;/em&gt; can't be implemented with a function.&lt;/p&gt;&lt;h2&gt;Macros&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;To implement &lt;em&gt;unless&lt;/em&gt; we need to use macros.&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(defmacro unless [condition code]
+  '(if (not ~condition)
+     ~code))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;Macros are used to transform the code and they don't execute parameters. So an &lt;em&gt;unless&lt;/em&gt; call:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(unless (= 1 1)
+  (println &amp;quot;1 is not really 1&amp;quot;))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;would first be transformed to:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(if (not (= 1 1))
+  (println &amp;quot;1 is not really 1&amp;quot;))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;and then executed, which would produce the desired result.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;Macros allow you to define a features that look like they were included in the language itself - to extend the language. Our &lt;em&gt;unless&lt;/em&gt; macro looks similar to &lt;em&gt;if&lt;/em&gt;. You can't tell it wasn't shipped with Clojure.&lt;/p&gt;&lt;h2&gt;Why Macros?&lt;/h2&gt;&lt;p class=&quot;paragraph&quot;&gt;In 1996, Java appeared with &lt;em&gt;for&lt;/em&gt; loop. In 2004 Java received an upgraded &lt;em&gt;for-each&lt;/em&gt; loop.&lt;/p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;// 1996.
+for (int i = 0; i &amp;lt; collection.size(); i++) {
+  SomeType var = collection.get(i);
+  ...
+}
+
+// 2004.
+for (SomeType var : collection) {
+  ...
+}&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;It took years to add the upgraded loop to Java. Is there a way you can add a similar feature to the language yourself? You would need to open the Java compiler, to learn the bytecode and to master the language Java was implemented in. With Clojure, you can implement the &lt;em&gt;for-each&lt;/em&gt; loop with a macro in just few lines of Clojure:&lt;/p&gt;&lt;pre class=&quot;prettyprint lang-clj&quot;&gt;(defmacro foreach [[sym coll] &amp;amp; body]
+  `(loop [coll# ~coll]
+     (when-let [[~sym &amp;amp; xs#] (seq coll#)]
+       ~@body
+       (recur xs#))))
+
+(foreach [i numbers]
+         (println i))&lt;/pre&gt;&lt;p class=&quot;paragraph&quot;&gt;There are few funny looking characters in the implementation, but it's just 5 lines of code. Any devoted Clojure developer could do it.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;Clojure's extensibility comes from the fact that Clojure code is made of Clojure lists. Code is data. And that's why macros can transform code into other code.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;Now you know when you see a lot of parenthesis there are no reason to frown. It's just lists of lists. Data. Code.&lt;/p&gt;</content></entry><entry><title>Rake and Rails environment</title><link>http://nebojsa.stricevic.info/2014/02/rake-and-rails-enviroment.html</link><updated>2014-02-02T00:00:00</updated><id>http://nebojsa.stricevic.info/2014/02/rake-and-rails-enviroment.html</id><content type="html">&lt;p class=&quot;paragraph&quot;&gt;I've been using Rake daily for more than 2 years now,
    but I never went through a proper tutorial about Rake.
    Lately, I learned few basic things about Rake that made
    task dependency much more clear.&lt;/p&gt;&lt;p class=&quot;paragraph&quot;&gt;Simplest way to define a rake task is this:&lt;/p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;task :my_task do
