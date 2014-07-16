@@ -16,7 +16,7 @@
            (+ i j))))
 CLOJURE
 
-(p "One of the most repealing properties for Clojure for newcomers is it's syntax. If you didn't have an exposure to a Lisp before, it looks fairly alien with all the parenthesis. Our goal here is to discover where does the syntax coming from and why is it so different from other languages out there.")
+(p "One of the most repealing properties of Clojure for newcomers is it's syntax. If you didn't have an exposure to a Lisp before, it looks fairly alien with all the parenthesis. Our goal here is to discover where does the syntax comes from and why is it so different from other languages out there.")
 
 [:h2 "Clojure Reader"]
 
@@ -25,7 +25,7 @@ CLOJURE
 (p
   [:img {:src "http://robohash.org/Strika" :alt "Robot image, representing Clojure Reader"}])
 
-(p "The friendly looking robot is Clojure Reader. He's job is similar like interpreters in other languages. You give him a piece of code, it executes it and returns you the result. But there is one significant difference. While other interpreters eat lines of code - Clojure Reader eats lists!")
+(p "The friendly looking robot is Clojure Reader. He's job is similar like interpreters in other languages " (link "[1]" "#1") ". You give him a piece of code, it executes it and returns you the result. But there is one significant difference. While other interpreters eat lines of code - Clojure Reader eats lists!")
 
 (p "So the first thing to learn from Clojure Syntax is the simplest, most basic list - an empty list:")
 
@@ -76,7 +76,7 @@ CLOJURE
 
 (p "As with most modern programming languages, Clojure first evaluates a function arguments and then the function itself.")
 
-(p "As saw before, + and - are just functions. They are not operators. And there are no operator precedence in Clojure. It's not needed. Parenthesis are not used to group expressions, but to create lists.")
+(p "As we saw before, + and - are just functions. They are not operators. And there are no operator precedence in Clojure. It's not needed. Parenthesis are not used to group expressions, but to create lists to be executed.")
 
 [:h2 "Variables and Functions"]
 
@@ -113,7 +113,7 @@ CLOJURE
 
 [:h2 "Lists For Collections"]
 
-(p "Of course, lists can be used for more than code. They can also hold *just* data. But, creating a list of numbers with what we have so far may end up unexpectedly:")
+(p "Of course, lists can be used for more than code. They can also hold *just* data. But, creating a list of numbers with what we learned so far may end up unexpectedly:")
 
 #-CLOJURE
 (def numbers (1 2 3 4 5))
@@ -169,7 +169,7 @@ CLOJURE
 
 (p "You can put a piece of code in a list,  play with it and execute it. In the example, we removed + from the *some-code*, inserted - instead and created the *new-code*.")
 
-(p "You may point out that a similar thing is available in Ruby, JavaScript and other languages. There, you would put a code in a string and execute it. Difference, though, is that with Clojure, you have all the functions available to work with collections to mold the code. In other languages you have only the functions that work with strings.")
+(p "You may point out that a similar thing is available in Ruby, JavaScript and other languages. There, you would put a code in a string and execute it. The difference, though, is that with Clojure, you have all the functions available to work with collections to mold the code. In other languages you have only the functions that work with strings - a much less powerful set.")
 
 [:h2 "Extending the Language"]
 
@@ -205,7 +205,7 @@ CLOJURE
 "1 is not really 1"
 CLOJURE
 
-(p "Although the condition is true, Clojure returned the body of *unless*. Problem is that, as we said before, Clojure first executed arguments of a function and then the function itself. This means that Clojure first executed " [:cite "(println 1 is not really 1)"] " and then the *unless* function itself. It's obvious *unless* can't be implemented with a function.")
+(p "Although the condition is true, Clojure executed the body of *unless*. Problem is that, as we said before, Clojure first executes arguments of a function and then the function itself. This means that Clojure first executed " [:cite "(println \"1 is not really 1\")"] " and then the *unless* function itself. It's obvious *unless* can't be implemented with a function.")
 
 [:h2 "Macros"]
 
@@ -233,7 +233,7 @@ CLOJURE
 
 (p "and then executed, which would produce the desired result.")
 
-(p "Macros allow you to define a features that look like they were included in the language itself - to extend the language. Our *unless* macro looks similar to *if*. You can't tell it wasn't shipped with Clojure.")
+(p "Macros allow you to define a feature - control structure, that looks like it was included in the language itself - to extend the language. Our *unless* macro looks similar to *if*. You can't tell it wasn't shipped with Clojure.")
 
 [:h2 "Why Macros?"]
 
@@ -270,3 +270,8 @@ CLOJURE
 (p "Clojure's extensibility comes from the fact that Clojure code is made of Clojure lists. Code is data. And that's why macros can transform code into other code.")
 
 (p "Now you know when you see a lot of parenthesis there are no reason to frown. It's just lists of lists. Data. Code.")
+
+[:br]
+
+[:p
+ [:span {:id "1"} "[1] This is not really what Clojure Reader does, but for the sake of introduction to Clojure syntax, it's OK to pretend it is."]]
