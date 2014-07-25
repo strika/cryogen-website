@@ -16,7 +16,7 @@
            (+ i j))))
 CLOJURE
 
-(p "One of the most repealing properties of Clojure for newcomers is it's syntax. If you didn't have an exposure to a Lisp before, it looks fairly alien with all the parenthesis. Our goal here is to discover where does the syntax comes from and why is it so different from other languages out there.")
+(p "One of the most blocking properties of Clojure for newcomers is it's syntax. If you didn't have an exposure to a Lisp before, it looks fairly alien with all the parenthesis. Our goal here is to discover where does the syntax comes from and why is it so different from other languages out there.")
 
 [:h2 "Clojure Reader"]
 
