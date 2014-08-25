@@ -27,11 +27,14 @@
         :site-title "There are ants on the page"
         :twitter    "nstricevic"
         :css        ["/fonts/fira/fira.css"
-                     "/css/foundation.min.css"
+                     "/css/bootstrap.min.css"
                      "/css/style.css"
                      "/css/desert.css"]
         :device-css []
-        :js         ["/js/main.js"]}
+        :js         ["//code.jquery.com/jquery-1.11.0.min.js"
+                     "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
+                     "/js/main.js"
+                     "/js/bootstrap.min.js"]}
 
  ;; post file compile hook
  :compile-with-post ["index.html.clj" "atom.xml.clj"]

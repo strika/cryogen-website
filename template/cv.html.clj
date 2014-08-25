@@ -30,9 +30,9 @@
   [:p {:class "big"} "February 2012 - present"]
   [:p "Web Engineer at " (link "Rendered Text" "http://renderedtext.com") ", Novi Sad"]
   [:p "Web engineer, working close with clients on several web
-      applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " - a continuous testing
-      service and " (link "Reservation Genie" "http://reservationgenie.com")
-      " - a restaurant reservation web application."]
+      applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " - a continuous testing and deployment
+      platform and " (link "Reservation Genie" "http://reservationgenie.com")
+      " - a restaurant reservation service."]
   [:p {:class "big"} "October 2010 - February 2012"]
   [:p "Teaching Assistant at Faculty of  Technical Sciences, University of Novi Sad"]
   [:p "Was responsible for teaching several software engineering related
