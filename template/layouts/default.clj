@@ -27,15 +27,8 @@
  [:div {:id "ant"}]
 
  (container
-   [:nav
-    [:ul
-     [:li [:a {:href "/"} "Home"]]
-     [:li [:a {:href "/about.html"} "About"]]
-     [:li [:a {:href "/cv.html"} "CV"]]
-     [:li [:a {:href "/contact.html"} "Contact"]]]]
 
-   [:div {:class "main small-8"}
-    contents]
+   contents
 
    [:footer
     [:small "&copy; 2014 Nebojša Stričević"]])

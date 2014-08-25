@@ -24,20 +24,12 @@
 
 [:body
 
- [:div {:id "ant"}]
-
  (container
-   [:nav
-    [:ul
-     [:li [:a {:href "/"} "Home"]]
-     [:li [:a {:href "/about.html"} "About"]]
-     [:li [:a {:href "/cv.html"} "CV"]]
-     [:li [:a {:href "/contact.html"} "Contact"]]]]
 
     contents
  
    [:footer
-    [:small "&copy; 2013 Nebojša Stričević"]])
+    [:small "&copy; 2014 Nebojša Stričević"]])
  ; /container
 
  (js ["/js/prettify.js"

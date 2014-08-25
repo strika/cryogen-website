@@ -27,7 +27,7 @@
         :site-title "There are ants on the page"
         :twitter    "nstricevic"
         :css        ["/fonts/fira/fira.css"
-                     "/css/foundation.min.css"
+                     "/css/bootstrap.min.css"
                      "/css/style.css"
                      "/css/desert.css"]
         :device-css []
