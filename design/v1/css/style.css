@@ -27,14 +27,14 @@ html {
   background-color: transparent;
   border: 0;
   padding-right: 10px;
+  display: inline-block;
+  float: right;
 }
 .navbar-collapse {
   border: 0;
 }
 .navbar-nav {
   text-align: center;
-  display: inline-block;
-  float: right;
 }
 .navbar-default .navbar-nav>li>a {
   color: #943E0F;
