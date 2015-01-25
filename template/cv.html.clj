@@ -1,7 +1,8 @@
 ; @layout  cv
 ; @title   CV
 
-[:h1 {:id "name"} "Nebojša Stričević"]
+[:div {:id "name"}
+ [:h1 "Nebojša Stričević"]]
 
 [:div {:class "basic-info"}
  [:p
@@ -9,33 +10,46 @@
   "Born in Sombor, Serbia on July 7, 1986"]
  [:p
   [:span "email"]
-  (link {:class "hide-print"} "nebojsa.stricevic@gmail.com" "nebojsa.stricevic@gmail.com")]
+  (link {:class "hide-print"}
+        "nebojsa.stricevic@gmail.com"
+        "nebojsa.stricevic@gmail.com")]
  [:p
   [:span "www"]
-  (link {:class "hide-print"} "http://nebojsa.stricevic.info" "http://nebojsa.stricevic.info")]
+  (link {:class "hide-print"}
+        "http://nebojsa.stricevic.info"
+        "http://nebojsa.stricevic.info")]
  [:p
   [:span "github"]
-  (link {:class "hide-print"} "http://github.com/strika" "http://github.com/strika")]
+  (link {:class "hide-print"}
+        "http://github.com/strika"
+        "http://github.com/strika")]
  [:p
   [:span "linkedin"]
-  (link {:class "hide-print"} "http://rs.linkedin.com/in/nebojsastricevic/" "http://rs.linkedin.com/in/nebojsastricevic/")]
+  (link {:class "hide-print"}
+        "http://rs.linkedin.com/in/nebojsastricevic/"
+        "http://rs.linkedin.com/in/nebojsastricevic/")]
  [:p
   [:span "careers 2.0"]
-  (link {:class "hide-print"} "http://careers.stackoverflow.com/strika" "http://careers.stackoverflow.com/strika")]]
+  (link {:class "hide-print"}
+        "http://careers.stackoverflow.com/strika"
+        "http://careers.stackoverflow.com/strika")]]
 
 [:div {:class "content"}
  [:div {:class "left"}
   [:p "Employment"]]
  [:div {:class "right"}
-  [:p {:class "big"} "February 2012 - present"]
-  [:p "Web Engineer at " (link "Rendered Text" "http://renderedtext.com") ", Novi Sad"]
-  [:p "Web engineer, working close with clients on several web
-      applications - most notably " (link "Semaphore" "http://semaphoreapp.com") " - a continuous testing and deployment
-      platform and " (link "Reservation Genie" "http://reservationgenie.com")
-      " - a restaurant reservation service."]
-  [:p {:class "big"} "October 2010 - February 2012"]
-  [:p "Teaching Assistant at Faculty of  Technical Sciences, University of Novi Sad"]
-  [:p "Was responsible for teaching several software engineering related
+  [:p {:class "big"}
+   "February 2012 - present, Full stack developer at "
+   (link "Rendered Text" "http://renderedtext.com") ", Novi Sad"]
+  [:p "Full stack developer working on " (link "Semaphore" "http://semaphoreapp.com")
+   " - a continuous testing and deployment platform. "]
+  [:p "In past, he was also working on client projects, most notably "
+   (link "Reservation Genie" "http://reservationgenie.com")
+   " - a restaurant reservation service."]
+  [:p {:class "big"}
+   "October 2010 - February 2012, Teaching Assistant at Faculty of
+   Technical Sciences, University of Novi Sad"]
+  [:p "He was responsible for teaching several software engineering related
       courses for students on third and fourth year of Bachelor studies."]]]
 
 [:div {:class "content"} 
@@ -69,4 +83,4 @@
 [:div {:class "content"}
  [:div {:class "right"}
    [:p
-    (link {:class "hide-print"} "Download PDF" "/nebojsa-stricevic-cv.pdf")]]]
+    (link {:class "download-pdf"} "Download PDF" "/nebojsa-stricevic-cv.pdf")]]]
