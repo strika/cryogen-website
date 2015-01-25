@@ -44,7 +44,7 @@
    contents)
 
  [:footer
-  [:small "&copy; 2014 Nebojša Stričević"]]
+  [:small "&copy; 2015 Nebojša Stričević"]]
  ; /container
 
  (js ["/js/prettify.js"
