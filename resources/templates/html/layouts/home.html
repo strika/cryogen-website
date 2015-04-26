@@ -1,0 +1,57 @@
+{% extends "templates/html/layouts/base.html" %}
+{% block content %}
+
+<div class="avatar">
+</div>
+
+<header>
+  <h1>Hi there!</h1>
+</header>
+
+<p class="introduction">
+  Thanks for stopping by. My name is Nebojša Stričević, but friends call me
+  Strika. So should you.
+</p>
+
+<p>
+  I live in Novi Sad, Serbia, with my wonderful wife <a href="http://hackberry.co">Tanja</a>
+  and son Mihajlo.
+</p>
+
+<p>
+  I work as a web engineer on <a href="https://semaphoreci.com">Semaphore</a> -
+  a continuous testing and deployment service and write technical articles for
+  <a href="https://semaphoreci.com/community/authors/strika">Semaphore Community</a>.
+</p>
+
+<p>
+  In free time, I enjoy coffee and black tea, dark chocolate, dark beer and
+  <a href="https://en.wikipedia.org/wiki/Pelinkovac">pelinkovac</a>. I'm also
+  interested in mechanical watches and older cars.
+</p>
+
+<p>
+  Feel free to send me an <a href="mailto:nebojsa.stricevic@gmail.com">email</a>,
+  follow me on <a href="http://twitter.com/nstricevic">Twitter</a> or connect with
+  my <a href="http://rs.linkedin.com/in/nebojsastricevic/">LinkedIn account</a>.
+  Also, check out my work on <a href="http://github.com/strika">GitHub</a>.
+</p>
+  
+<p>
+  If you're interested in my professional work, please see my
+  <a href="/cv.html">resume</a>.
+</p>
+
+{% if latest-posts|not-empty %}
+<div class="posts">
+  <h2>Posts</h3>
+
+  <ul class="link-list">
+    {% for post in latest-posts %}
+    <li><a href="{{post.uri}}">{{post.title}}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% endblock %}
