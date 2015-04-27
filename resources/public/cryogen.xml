@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<atom:link href='http://http://nebojsa.stricevic.info/' rel='self' type='application/rss+xml'/>
+<generator>
+clj-rss
+</generator>
+<title>
+There Are Ants on the Page
+</title>
+<link>
+http://http://nebojsa.stricevic.info/
+</link>
+<description>
+Strika's personal website.
+</description>
+<lastBuildDate>
+Mon, 27 Apr 2015 21:20:49 +0200
+</lastBuildDate>
+<author>
+Nebojša Stričević
+</author>
+</channel>
+</rss>

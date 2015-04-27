@@ -1,0 +1,19 @@
+{:site-title       "There Are Ants on the Page"
+ :author           "Nebojša Stričević"
+ :description      "Strika's personal website."
+ :site-url         "http://http://nebojsa.stricevic.info/"
+ :post-root        "posts"
+ :tag-root         "tags"
+ :page-root        ""
+ :blog-prefix      ""
+ :rss-name         "feed.xml"
+ :rss-filters      ["cryogen"]
+ :recent-posts     3
+ :post-date-format "yyyy-MM-dd"
+ :sass-src         nil
+ :sass-dest        nil
+ :resources        ["css" "js" "img" "404.html"]
+ :keep-files       [".git"]
+ :disqus?          false
+ :disqus-shortname ""
+ :ignored-files    [#"\.#.*" #".*\.swp$"]}
