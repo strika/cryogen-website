@@ -5,14 +5,14 @@
  :post-root        "posts"
  :tag-root         "tags"
  :page-root        ""
- :blog-prefix      "strika.github.com"
+ :blog-prefix      ""
  :rss-name         "feed.xml"
  :rss-filters      ["cryogen"]
  :recent-posts     3
  :post-date-format "yyyy-MM-dd"
  :sass-src         nil
  :sass-dest        nil
- :resources        ["css" "js" "img" "404.html"]
+ :resources        ["css" "js" "img" "404.html" "CNAME"]
  :keep-files       [".git"]
  :disqus?          false
  :disqus-shortname ""
