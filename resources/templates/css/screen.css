@@ -84,7 +84,8 @@ footer {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-  background: url("/img/ns.jpeg") no-repeat;
+  background: url("/img/ns.png") no-repeat;
+  background-size: 200px 200px;
   float: right;
   margin: 10px 5px 20px 20px;
 }
