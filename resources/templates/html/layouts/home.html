@@ -62,17 +62,4 @@
   If you're interested in my professional work, please see my
   <a href="/cv.html">resume</a>.
 </p>
-
-{% if latest-posts|not-empty %}
-<div class="posts">
-  <h2>Posts</h3>
-
-  <ul class="link-list">
-    {% for post in latest-posts %}
-    <li><a href="{{post.uri}}">{{post.title}}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
-
 {% endblock %}

@@ -1,20 +1,15 @@
 {% extends "templates/html/layouts/base.html" %}
-{%block subtitle %}: Archives{% endblock %}
-{% block content %}
-<div id="posts">
-    <div id="page-header">
-        <h2>Archives</h2>
-    </div>
-    {% for group in groups %}
-        <h4>{{group.group}}</h4>
-        <ul>
-        {% for post in group.posts %}
-        <li>
-            {{post.date|date:"MMM dd"}} - <a href="{{post.uri}}">{{post.title}}</a>
-        </li>
-        {% endfor %}
-        </ul>
-    {% endfor %}
 
+{%block subtitle %}: Log{% endblock %}
+
+{% block content %}
+<h1>Log</h1>
+
+{% for post in latest-posts %}
+<div class="log-post">
+  <h3>{{post.title}}</h3>
+
+  {{post.content|safe}}
 </div>
+{% endfor %}
 {% endblock %}
