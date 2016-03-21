@@ -2,6 +2,14 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url>
 <loc>
+http://www.strika.info2016-03-21-hello-world.html
+</loc>
+<lastmod>
+2016-03-21
+</lastmod>
+</url>
+<url>
+<loc>
 http://www.strika.infoarchives.html
 </loc>
 <lastmod>
@@ -27,6 +35,14 @@ http://www.strika.infocv.html
 <url>
 <loc>
 http://www.strika.info404.html
+</loc>
+<lastmod>
+2016-03-21
+</lastmod>
+</url>
+<url>
+<loc>
+http://www.strika.infoposts/2016-03-21-hello-world.html
 </loc>
 <lastmod>
 2016-03-21
