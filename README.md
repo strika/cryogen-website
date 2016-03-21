@@ -1,6 +1,9 @@
-strika.github.com
-=================
+# http://strika.info
 
-My [personal website](http://nebojsa.stricevic.info).
+My [personal website](http://strika.info).
 
-Powered by [Clojure](http://clojure.org) and [Misaki](https://github.com/liquidz/misaki).
+Powered by [Clojure](http://clojure.org) and [Cryogen](http://cryogenweb.org/).
+
+## Development
+
+Run `lein ring server` and start hacking.
