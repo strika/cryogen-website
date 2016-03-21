@@ -55,24 +55,12 @@
   Feel free to send me an <a href="mailto:nebojsa.stricevic@gmail.com">email</a>,
   follow me on <a href="http://twitter.com/nstricevic">Twitter</a> or connect with
   my <a href="http://rs.linkedin.com/in/nebojsastricevic/">LinkedIn account</a>.
-  Also, check out my work on <a href="http://github.com/strika">GitHub</a>.
+  Also, check out my work on <a href="http://github.com/strika">GitHub</a> or read
+  <a href="/archives.html">log of my activies</a>.
 </p>
 
 <p>
   If you're interested in my professional work, please see my
   <a href="/cv.html">resume</a>.
 </p>
-
-{% if latest-posts|not-empty %}
-<div class="posts">
-  <h2>Posts</h3>
-
-  <ul class="link-list">
-    {% for post in latest-posts %}
-    <li><a href="{{post.uri}}">{{post.title}}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
-
 {% endblock %}
