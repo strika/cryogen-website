@@ -90,9 +90,6 @@ footer {
   float: right;
   margin: 10px 5px 20px 20px;
 }
-.avatar:hover {
-  background: url("/img/nsh.jpeg") no-repeat;
-}
 .contact {
   margin: auto;
   text-align: center;
