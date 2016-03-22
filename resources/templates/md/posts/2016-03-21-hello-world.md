@@ -6,7 +6,7 @@ worked on [Semaphore](https://semaphoreci.com), a continuous integration service
 used daily by thousands of developers around the world.
 
 Now, I decided to join my wife [Tanja](http://hackberry.co) and to find a niche
-where we can make a difference. We're still working on that. Until then, I'll to
+where we can make a difference. We're still working on that. Until then, I'll
 work as an independent consultant.
 
 I plan to use this page as the log of my weekly activities. I'm still not sure if
