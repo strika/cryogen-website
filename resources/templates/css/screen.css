@@ -109,3 +109,10 @@ body.index h1 {
 body.index p, body.index ul {
   margin-bottom: 20px;
 }
+.log-post {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.log-title {
+  margin-bottom: 20px;
+}
