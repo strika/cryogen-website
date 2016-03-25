@@ -7,7 +7,7 @@
 
 {% for post in latest-posts %}
 <div class="log-post">
-  <h4>{{post.date|date:longDate}}</h4>
+  <h4 class="log-title">{{post.date|date:longDate}}</h4>
 
   {{post.content|safe}}
 </div>
