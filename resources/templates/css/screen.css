@@ -26,22 +26,22 @@ body {
 .content {
   margin-top: 3em;
 }
-
 .navbar-default {
   background-color: transparent;
   border: 0;
-  padding-right: 10px;
-  display: inline-block;
-  float: right;
+  text-align: center;
 }
 .navbar-collapse {
   border: 0;
+  padding-left: 0;
 }
 .navbar-nav {
   text-align: center;
+  float: none;
+  display: inline-block;
 }
 .navbar-default .navbar-nav>li>a {
-  color: #943E0F;
+  color: #428bca;
   padding: 10px 17px;
 }
 h1 {
@@ -115,4 +115,15 @@ body.index p, body.index ul {
 }
 .log-title {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .content {
+    margin-top: 0;
+  }
+  .avatar {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
 }
