@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Mon, 28 Mar 2016 14:12:34 +0200
+Fri, 01 Apr 2016 08:16:15 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-04-01-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-04-01-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt;I started working on a client project. However, I still have one slot left. If you need my help, or if you know someone who might, let me know.&lt;/p&gt;&lt;p&gt;I bought a new laptop - Macbook Pro 13&quot;. My initial choice was Dell XPS 13&quot; with Ubuntu. The main problem with Dell + Ubuntu is that some popular software (like Skype) doesn't work great. A friend advised me that this is something potential clients don't want to hear about.&lt;/p&gt;&lt;p&gt;I'm used to working on 27&quot; iMac and didn't expect much from Macbook Pro. But, it's a really nice machine. It's good looking, faster than iMac and it has a great screen. My only criticism is that the keyboard is not that great. It has that clickety sound, like I have long finger nails. But, it's not a big problem.&lt;/p&gt;&lt;p&gt;I visited a local meetup that featured 2 talks. The first one was by Sandra Prvulović, an HR expert. It discussed the problem of finding experienced developers for a company. One of the most interesting remarks I heard is that the IT companies have more or less equal offer in Novi Sad. Because of that, not many developers switch companies, although many say that they would if a company makes a good offer.&lt;/p&gt;&lt;p&gt;The other talk was by &lt;a href='https://medium.com/@tijanamomirov'&gt;Tijana Momirov&lt;/a&gt;. She talked about her experience living and working as a digital nomad. It was a very inspiring talk for someone who's just starting his own business.&lt;/p&gt;&lt;p&gt;I read the paper &lt;a href='https://www.cs.kent.ac.uk/people/staff/dat/tfp12/tfp12.pdf'&gt;Some History of Functional Programming Languages&lt;/a&gt; by D. A. Turner. It was generally an interesting paper, although hard to follow in some parts. I did learn some interesting facts, though. For example, that &lt;a href='https://en.wikipedia.org/wiki/Lisp&amp;#95;%28programming&amp;#95;language%29'&gt;LISP&lt;/a&gt;, was not influenced by &lt;a href='https://en.wikipedia.org/wiki/Lambda&amp;#95;calculus'&gt;lambda calculus&lt;/a&gt;. Apparently, &lt;a href='https://en.wikipedia.org/wiki/John&amp;#95;McCarthy&amp;#95;%28computer&amp;#95;scientist%29'&gt;John McCarthy&lt;/a&gt; didn't study &lt;a href='https://en.wikipedia.org/wiki/Alonzo&amp;#95;Church'&gt;Church's&lt;/a&gt; papers, before he invented LISP. Modern lisps, however, are based on lambda calculus.&lt;/p&gt;&lt;p&gt;Another interesting part is a discussion about languages that influenced &lt;a href='https://en.wikipedia.org/wiki/Haskell&amp;#95;%28programming&amp;#95;language%29'&gt;Haskell&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;My plan is to continue reading one paper every week.&lt;/p&gt;&lt;p&gt;I also continued working on &lt;a href='https://github.com/strika/codility'&gt;Codility lessons&lt;/a&gt;.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 01 Apr 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-03-25-log.html
@@ -34,7 +54,7 @@ Log
 &lt;p&gt;This was my first week as an independent consultant. And it went pretty slow. A project that I planned for this week got postponed, so I concentrated on some preparation work.&lt;/p&gt;&lt;p&gt;I updated my homepage a little bit. The website needs a full redesign, but for now, my goal was to make it decent. I updated the text on the homepage, added some links to the articles I wrote and the link to the &lt;a href='http://video.webcamp.si/wc2016&amp;#95;stricevic&amp;#95;supercharged&amp;#95;feature&amp;#95;flags/'&gt;conference talk&lt;/a&gt; I recently gave at WebCamp.si. I also started writing a short summary of my professional life, to replace the CV.&lt;/p&gt;&lt;p&gt;Another thing that I set up is this log of my weekly activities.&lt;/p&gt;&lt;p&gt;I did some research about Toptal as a source of clients. To get into Toptal, you need to pass a interview process, much like a standard company interview. One of the tasks is &lt;a href='https://codility.com/'&gt;Codility&lt;/a&gt; test. I tried doing few Codility tests that are &lt;a href='https://codility.com/programmers/lessons/'&gt;freely available&lt;/a&gt; and they are harder than I though. So I set up a &lt;a href='https://github.com/strika/codility'&gt;git repository&lt;/a&gt; and started going through the lessons.&lt;/p&gt;&lt;p&gt;My goal is to complete as many lessons as I can. I learned few things so far:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Lessons are harder than I thought. I'm not as good as I though.&lt;/li&gt;&lt;li&gt;I can get better by practicing. Ideas can be applied in different  challenges.&lt;/li&gt;&lt;li&gt;You need to know what &lt;a href='https://en.wikipedia.org/wiki/Big&amp;#95;O&amp;#95;notation'&gt;Big O notation&lt;/a&gt; is.&lt;/li&gt;&lt;li&gt;Every task in Codility has expectations for performance expressed in Bit O  notation. This is also a hint and a guide how you need to implement the solution.&lt;/li&gt;&lt;li&gt;It's good to write code that generates test data and to use benchmarking to  make sure a solution has good performance.&lt;/li&gt;&lt;li&gt;It's useful to develop a naive or slow solution first (if you can do that  fast), as you can use it to test the fast solution, that often has more  complex implementation.&lt;/li&gt;&lt;li&gt;My solutions to more complex problems are not that readable and the code is  not great.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;I plan to continue working on Codility challenges.&lt;/p&gt;&lt;p&gt;I also migrated email sending for a side project that I have (&lt;a href='http://servisne.info'&gt;servisne.info&lt;/a&gt;) from Mandrill to Mailgun.&lt;/p&gt;
 </description>
 <pubDate>
-Fri, 25 Mar 2016 00:00:00 +0100
+Fri, 25 Mar 2016 00:00:00 +0000
 </pubDate>
 <author>
 Nebojša Stričević
@@ -54,7 +74,7 @@ Hello World
 &lt;p&gt;Today is my first day as an independent consultant. For the last 4 years I worked on &lt;a href='https://semaphoreci.com'&gt;Semaphore&lt;/a&gt;, a continuous integration service used daily by thousands of developers around the world.&lt;/p&gt;&lt;p&gt;Now, I decided to join my wife &lt;a href='http://hackberry.co'&gt;Tanja&lt;/a&gt; and to find a niche where we can make a difference. We're still working on that. Until then, I'll work as an independent consultant.&lt;/p&gt;&lt;p&gt;I plan to use this page as the log of my weekly activities. I'm still not sure if this is a good idea - to make this page public, but I'll still try it out.&lt;/p&gt;
 </description>
 <pubDate>
-Mon, 21 Mar 2016 00:00:00 +0100
+Mon, 21 Mar 2016 00:00:00 +0000
 </pubDate>
 <author>
 Nebojša Stričević
