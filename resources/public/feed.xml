@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Fri, 08 Apr 2016 07:18:27 +0000
+Fri, 08 Apr 2016 07:32:54 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-04-08-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-04-08-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt;I continued working on the client project. And I did a smaller job to help out &lt;a href='http://hackberry.co'&gt;Tanja&lt;/a&gt; with her work.&lt;/p&gt;&lt;p&gt;I fixed 2 annoying exceptions for &lt;a href='http://servisne.info'&gt;servisne.info&lt;/a&gt;, the service I developed and maintain.&lt;/p&gt;&lt;p&gt;I read The Humble Programmer, the ACM Turing award Lecture by &lt;a href='https://en.wikipedia.org/wiki/Edsger&amp;#95;W.&amp;#95;Dijkstra'&gt;Dijkstra&lt;/a&gt; from 1972. And it's a fantastic paper! I wrote more about that on &lt;a href='/papers.html'&gt;the papers list&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I also continued working on &lt;a href='https://github.com/strika/codility'&gt;Codility lessons&lt;/a&gt;. It's interesting that another programmer contacted me though the repository. We exchanged few emails with tips and shared our experience about Codility and programming in general.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 08 Apr 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-04-01-log.html
