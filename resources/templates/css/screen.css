@@ -58,6 +58,9 @@ h2 {
   font-family: 'Fira Sans', sans-serif;
   color: #943E0F;
 }
+h4 {
+  margin-top: 40px;
+}
 .introduction {
   margin-top: 3em;
 }
