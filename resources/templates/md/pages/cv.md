@@ -75,4 +75,4 @@ Angular, Backbone, jQuery, Jasmine, etc.
 
 In my free time, I play around with Clojure.
 
-If you want to know how I became a software engineer, read [the story](/how_i_got_here.html).
+If you want to know how I became a software engineer, read [the story](http://strika.info/how_i_got_here.html).
