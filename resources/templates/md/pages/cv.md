@@ -5,7 +5,6 @@
 
 <br/>
 
-- *info*: Born in Sombor, Serbia on July 7, 1986
 - *email*: [nebojsa.stricevic@gmail.com](mailto:nebojsa.stricevic@gmail.com)
 - *www*: [http://strika.info](http://strika.info)
 - *github*: [http://github.com/strika](http://github.com/strika)
