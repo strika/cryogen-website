@@ -3,6 +3,16 @@
  :page-index 0
  :navbar? false}
 
+#### Why Functional Programming Matters by John Hughes
+
+The paper was originally published in 1984. It discusses advantages of
+functional programming over "conventional" languages. In particular, it
+discusses how higher order functions and lazy evaluation contribute to
+modularity.
+
+I found useful that the paper clearly expresses how 2 major ideas from
+functional programming contribute to the overall functional programming style.
+
 #### The Humble Programmer by Edsger W. Dijkstra
 
 The Humble Programmer is the ACM Turing award Lecture by
