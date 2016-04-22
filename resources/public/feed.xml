@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Wed, 20 Apr 2016 12:59:34 +0000
+Fri, 22 Apr 2016 07:54:00 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-04-22-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-04-22-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt;I worked on a client project and I found another project that will keep my busy for the next few months. If you still want to work with me, please contact me to check my availability. I might still be open for smaller consulting gigs.&lt;/p&gt;&lt;p&gt;I had another Toptal interview that I passed. And I have one more step left before I can join Toptal.&lt;/p&gt;&lt;p&gt;This week I choose to read &lt;em&gt;Why Functional Programming Matters&lt;/em&gt; by John Hughes. The paper was published in 1984. It discusses advantages of functional programming over &quot;conventional&quot; languages.  In particular, it discusses how higher order functions and lazy evaluation contribute to modularity. I also printed out several papers for the next few weeks.&lt;/p&gt;&lt;p&gt;I switched to &lt;a href='https://neovim.io/'&gt;Neovim&lt;/a&gt; as my main editor instead of Vim. Few fellow developers reported that it's stable enough for daily use. I'll try it out for the next few weeks. I created a new GitHub repository for &lt;a href='https://github.com/strika/neovimfiles'&gt;Neovim configuration&lt;/a&gt; and updated my &lt;a href='https://github.com/strika/dotfiles'&gt;dotfiles repository&lt;/a&gt; to install Neovim automatically.&lt;/p&gt;&lt;p&gt;In the next few weeks, I plan to focus on client projects and to wrap up Toptal application.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 22 Apr 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-04-15-log.html
