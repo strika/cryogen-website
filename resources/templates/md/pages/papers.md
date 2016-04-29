@@ -3,6 +3,25 @@
  :page-index 0
  :navbar? false}
 
+#### Computer Programming as an Art by Donald E. Knuth
+
+Computer Programming as an Art is the ACM Turing Award Lecture by
+[Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) from 1974. Knuth is
+famous by his multi-volume work
+[The Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming),
+sometimes abbreviated as TAOCP.
+
+In his lecture, Knuth explains why he chose to call programming an art. He's not
+calling the whole programming "universe" an art. Instead, he explains that some
+parts of programming profession are an art, while some are science or a craft.
+
+I remember that few years ago blog posts and conference talks about programming
+as art/craft/engineering/science were appearing everywhere. Knuth's lecture is
+the earliest and probably the most important discussion on the topic as it
+inspired many others.
+
+This is another paper I expect to keep returning over the years.
+
 #### Why Functional Programming Matters by John Hughes
 
 The paper was originally published in 1984. It discusses advantages of
