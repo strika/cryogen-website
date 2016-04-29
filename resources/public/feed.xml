@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Fri, 29 Apr 2016 04:45:09 +0000
+Fri, 29 Apr 2016 05:05:42 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-04-29-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-04-29-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt; I focused most of my time on a new client project, that will probably keep me  busy for the next few months. It's an established project that's been around  for around 10 years. It has a small, but dedicated team. So far, I spent most  of my time learning about the domain and the code base, but I also did few  smaller contributions.&lt;/p&gt;&lt;p&gt; I read Donald Knuth's ACM Turing award lecture from 1974 - Computer Programming  as an Art. Read more about it on the &lt;a href='/papers.html'&gt;list of papers&lt;/a&gt;.&lt;/p&gt;&lt;p&gt; I learned few surprising (to me) but useful tips related to Ruby on Rails and  testing this week. I created &lt;a href='https://github.com/strika/rails-tips'&gt;Rails Tips&lt;/a&gt;  repository to collect them. I choose a GitHub repository, as I welcome  contributions. I'm generally looking for tips related to Ruby or Rails or  related tools that are less known, interesting or surprising.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 29 Apr 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-04-22-log.html
