@@ -3,6 +3,21 @@
  :page-index 0
  :navbar? false}
 
+#### Searching for Spaceships by David Eppstein
+
+This paper is different than others on the list. While most other papers would be
+interesting to any programmer, this one is reserved for
+[Game of Life](https://en.wikipedia.org/wiki/The_Game_of_Life) enthusiasts. It
+explains the rich Life vocabulary and presents different species of Life. Then it
+compares different techniques for searching for spaceships and presents a new
+technique developed by the author.
+
+If you are into Life and dream about finding spaceships and implementing your
+own search program, this is a great paper for you. It's dense, so I have to read
+it few more times. The paper was published in 2000, so I assume that finding the
+list of papers that cite *Searching for Spaceships* will produce an interesting
+reading material.
+
 #### Computer Programming as an Art by Donald E. Knuth
 
 Computer Programming as an Art is the ACM Turing Award Lecture by
