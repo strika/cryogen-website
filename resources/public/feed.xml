@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Fri, 13 May 2016 15:57:38 +0000
+Fri, 13 May 2016 16:04:29 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-05-13-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-05-13-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt;This week I completed last formal steps for joining Toptal and I'm now a Toptal member. Still didn't spend much time on the platform, searching for jobs, as I'm busy with client work.&lt;/p&gt;&lt;p&gt;I read &lt;a href='/papers.html'&gt;Organizing Programs Without Classes&lt;/a&gt; which compares class based object oriented languages with those based on prototypes.&lt;/p&gt;&lt;p&gt;I continued working on a side project - managing book collections for teams, but I still struggle at finding time for it.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 13 May 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-05-06-log.html
@@ -31,7 +51,7 @@ http://www.strika.info/posts/2016-05-06-log.html
 Log
 </title>
 <description>
-&lt;p&gt; I continued working on the client project that I started the last week. I  learned that the project started as a pre-Rails 1.0 application. It's great to  work on an application that's been ticking for so long.&lt;/p&gt;&lt;p&gt;At the start of the week I worked intensively on my Toptal application. Yesterday, I had the last interview and I'm now accepted to Toptal talent pool. I'm still not sure how much work will I do through Toptal, but it's nice to have that as an option.&lt;/p&gt;&lt;p&gt;This week I read &lt;a href='/papers.html'&gt;Searching for Spaceships&lt;/a&gt; by David Eppstein. Although it's not written for the wide programming community, it's very interesting if you're into &lt;a href='https://en.wikipedia.org/wiki/The&amp;#95;Game&amp;#95;of&amp;#95;Life'&gt;Life&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I continued working on the client project that I started the last week. I learned that the project started as a pre-Rails 1.0 application. It's great to work on an application that's been ticking for so long.&lt;/p&gt;&lt;p&gt;At the start of the week I worked intensively on my Toptal application. Yesterday, I had the last interview and I'm now accepted to Toptal talent pool. I'm still not sure how much work will I do through Toptal, but it's nice to have that as an option.&lt;/p&gt;&lt;p&gt;This week I read &lt;a href='/papers.html'&gt;Searching for Spaceships&lt;/a&gt; by David Eppstein. Although it's not written for the wide programming community, it's very interesting if you're into &lt;a href='https://en.wikipedia.org/wiki/The&amp;#95;Game&amp;#95;of&amp;#95;Life'&gt;Life&lt;/a&gt;.&lt;/p&gt;
 </description>
 <pubDate>
 Fri, 06 May 2016 00:00:00 +0000
