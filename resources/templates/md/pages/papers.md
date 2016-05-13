@@ -3,6 +3,21 @@
  :page-index 0
  :navbar? false}
 
+#### Organizing Programs Without Classes
+
+This paper is written by a group of authors from Stanford. It was published in
+1991.
+
+It speaks about object oriented languages that are not class based. Instead,
+they use prototypes and traits to implement extensions, encapsulation and
+dynamic inheritance. The paper compares class based and classless languages and
+their expressive power.
+
+The paper is using
+[Self](https://en.wikipedia.org/wiki/Self_%28programming_language%29) as an
+example, but many concepts can be applied to the most popular prototype based
+programming language today - JavaScript.
+
 #### Searching for Spaceships by David Eppstein
 
 This paper is different than others on the list. While most other papers would be
