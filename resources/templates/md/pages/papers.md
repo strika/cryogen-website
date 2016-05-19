@@ -3,6 +3,21 @@
  :page-index 0
  :navbar? false}
 
+#### Lisp: A Language for Stratified Design by Harold Abelson and Gerald Jay Sussman
+
+The paper was published in 1987 by two MIT professors Abelson and Sussman.
+Abelson and Sussman are famous by the book and related MIT course called
+Structure and Interpretation of Computer Programs, often abbreviated
+[SICP](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs).
+The course is [available online](https://www.youtube.com/watch?v=2Op3QLzMgSY) for free.
+
+The paper explains how Lisp differs from other languages in the way programs are
+constructed. Instead of combining primitives, Lisp programs are often
+constructed by designing domain specific languages and combining abstractions
+from those languages. This style of programming is impossible in many popular
+languages that lack expressive power to construct domain specific languages. The
+paper is interesting for anyone who wants to know what makes Lisp special.
+
 #### Organizing Programs Without Classes
 
 This paper is written by a group of authors from Stanford. It was published in
