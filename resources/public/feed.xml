@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Thu, 19 May 2016 15:15:19 +0000
+Fri, 20 May 2016 22:32:49 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-05-20-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-05-20-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt;This was a busy week, but not much happened actually. I'm still busy with client work. Unfortunately, I didn't find time to work on the side project.&lt;/p&gt;&lt;p&gt;I did schedule some time to read &lt;a href='/papers.html'&gt;Lisp: A Language for Stratified Design&lt;/a&gt; by Abelson and Sussman, 2 professors from MIT, famous by &lt;a href='https://en.wikipedia.org/wiki/Structure&amp;#95;and&amp;#95;Interpretation&amp;#95;of&amp;#95;Computer&amp;#95;Programs'&gt;SICP&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I found a nice Ruby on Rails related resource &lt;a href='https://rorsecurity.info/'&gt;Ruby on Rails Security Project&lt;/a&gt;. It includes a number of guides on RoR security and a newsletter that looks like a neat way to keep up with the important topic.&lt;/p&gt;&lt;p&gt;I added one new tip to &lt;a href='https://github.com/strika/rails-tips'&gt;Rails Tips&lt;/a&gt; repository. The plan is to make at least one contribution to the repository every week.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 20 May 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-05-13-log.html
