@@ -3,6 +3,33 @@
  :page-index 0
  :navbar? false}
 
+#### The Imitation Game by Alan Turing
+
+Alan Turing was interested in the question "Can machines think?". Since the
+question is unambiguous, Turing decided to replace it with another one that's
+expressed in relatively unambiguous words. He described a game called the
+Imitation Game.
+
+The game is played by three parties: A is a computer, B is a person and C is an
+interrogator. The interrogation asks questions through a chat system and he's
+goal is to find out which one of the 2 parties is the computer. If the computer
+can "trick" the interrogator and pass as human in high percentage of cases, it
+wins the game and it is said to have some properties related to thinking.
+
+In the paper, Turing discusses the proposed question and if the question is
+worth asking. He describes the digital computer involved in the game and some
+limitations obstacles that one should consider when building the computer. He
+argues that one of the best ways to build the computer that can pass the test is
+with machine learning.
+
+The paper appeared in 1950 in Computing machinery and intelligence. Since then
+it was widely cited and criticized. One of the critiques is that by following
+the rules of the game, you won't build a computer that can think. Instead, the
+machine will end up in the local minimum - it will be good at pretending to be
+human in the Imitation Game but not much else. Nevertheless, the paper was very
+influential and it planted the seed for a new branch of research in the
+artificial intelligence field.
+
 #### Lisp: A Language for Stratified Design by Harold Abelson and Gerald Jay Sussman
 
 The paper was published in 1987 by two MIT professors Abelson and Sussman.
