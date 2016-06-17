@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Fri, 17 Jun 2016 18:19:35 +0000
+Fri, 17 Jun 2016 19:04:52 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-06-17-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-06-17-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt;The biggest change this week is that I got a new &lt;a href='http://imgur.com/a/71603'&gt;standing desk&lt;/a&gt;. I've used a standing desk for a couple of years now. This desk was custom made by my cousin. We designed a desk over a family dinner. Since we have a small apartment it was designed specifically to save space and to match my height. I'm pretty happy so far, although I already have a version 2.0 in mind.&lt;/p&gt;&lt;p&gt;Couple of weeks ago, a paper named &lt;a href='/papers.html'&gt;Deep API Learning&lt;/a&gt; was features on Hacker News, so I choose it for this week reading exercise.&lt;/p&gt;&lt;p&gt;I also updated &lt;a href='https://github.com/strika/rails-tips#how-to-wait-for-a-javascript-library-to-load-in-selenium-tests'&gt;Rails Tips&lt;/a&gt; with a trick that will make your Selenium tests more robust.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 17 Jun 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-06-10-log.html
