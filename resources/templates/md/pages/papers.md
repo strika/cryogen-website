@@ -3,6 +3,49 @@
  :page-index 0
  :navbar? false}
 
+#### Deep API Learning
+
+While other papers on the list are fairly old, this one came out this year. It's
+by a group of authors from The Hong Kong University of Science and Technology and
+Microsoft Research, Beijing, China.
+
+An interesting thing about the paper is that it was featured on the Hacker News
+home page couple of weeks ago. It's nice to see a new paper from the field on
+HN.
+
+The main subject of the paper is deep learning. Since I'm not very familiar with
+the field of machine learning, a good portion of the paper wasn't readable to
+me. However, I got few interesting insights.
+
+The authors described the problem in simple words - the goal is to create a deep
+learning based solution that would translate natural language search query into
+a sequence of API calls that solve the problem in a particular programming
+language. For example if you search for `delete files and folders in a directory`
+you get this solution for Java programming language:
+
+```java
+File.isDirectory
+File.list
+File.new
+File.delete
+```
+
+So the goal is to help programmers get relevant information when working with an
+unfamiliar API.
+
+The most interesting thing for me is the way authors gathered learning data for
+the machine learning based solution. They downloaded a large number of Java
+projects from GitHub. Then they "parsed" all methods with their docs. They used
+the first sentence from a method docs as "natural language query", while the
+source code was further analyzed to provide the API sequence calls solution for
+the query. I think this is an ingenious way to provide a large body of learning
+material for the deep learning engine.
+
+The solution performed better than other solution from the domain and the
+authors described possible improvements. I hope to see more research where
+different techniques are used to improve life of programmers and I hope to see
+more papers featured on Hacker News.
+
 #### The Imitation Game by Alan Turing
 
 Alan Turing was interested in the question "Can machines think?". Since the
