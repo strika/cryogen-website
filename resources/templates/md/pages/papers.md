@@ -3,6 +3,21 @@
  :page-index 0
  :navbar? false}
 
+#### Fundamental Concepts in Programming Languages by Christopher Strachey
+
+The paper describes concepts that we meet in different programming languages.
+Much of those are often taken for granted, so it's good to see difficulties
+behind a concept that's deceptively simple.
+
+The paper is not easy to read, unless you're very knowledgeable about semantics
+of programming languages. Nevertheless, I enjoyed exercising my brain with
+somewhat cryptic mathematical material.
+
+I will probably revisit this paper or another resource about semantics of
+programming languages in future. It would be great to find a resource that's
+approachable, even for someone that didn't learn a lot about semantics of
+programming languages through the formal education.
+
 #### Deep API Learning
 
 While other papers on the list are fairly old, this one came out this year. It's
