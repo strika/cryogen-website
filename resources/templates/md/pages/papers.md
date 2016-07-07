@@ -3,6 +3,21 @@
  :page-index 0
  :navbar? false}
 
+#### Dynamo: Amazon's Highly Available Key-value Store
+
+The
+[paper](https://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf)
+appeared in 2007 and it describes design and implementation of Dynamo, a
+database that powers several Amazon's services.
+
+The database is configurable and it allows developers to trade consistency to
+achieve high availability and performance. The most interesting insight from the
+paper was that many task that we implement using an SQL database ("by default")
+could be implemented using some other storage system that doesn't support
+transactions or consistency if there's need for higher availability or
+performance. It's also interesting to get some insight into the scale at which
+Amazon operates or operated 10 years ago.
+
 #### Fundamental Concepts in Programming Languages by Christopher Strachey
 
 The paper describes concepts that we meet in different programming languages.
