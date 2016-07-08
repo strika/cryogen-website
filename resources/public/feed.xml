@@ -15,11 +15,31 @@ http://www.strika.info
 Strika's personal website.
 </description>
 <lastBuildDate>
-Thu, 07 Jul 2016 15:15:28 +0000
+Fri, 08 Jul 2016 07:37:13 +0000
 </lastBuildDate>
 <author>
 Nebojša Stričević
 </author>
+<item>
+<guid>
+http://www.strika.info/posts/2016-07-08-log.html
+</guid>
+<link>
+http://www.strika.info/posts/2016-07-08-log.html
+</link>
+<title>
+Log
+</title>
+<description>
+&lt;p&gt;I changed my reading schedule this week. Instead of reading after I complete all client work and &quot;when I have time&quot;, I read at least half an hour in the morning. One concern that I had is that this might impact other work. However, this had no impact on client work. So for now, I'm sticking to &quot;do stuff you want first and stuff you must next&quot;.&lt;/p&gt;&lt;p&gt;I read &lt;a href='/papers.html'&gt;Dynamo: Amazon's Highly Available Key-value Store&lt;/a&gt; this week. An interesting paper about scaling problems and Dynamo - a database that allows developers to trade consistency to achieve high availability and performance.&lt;/p&gt;
+</description>
+<pubDate>
+Fri, 08 Jul 2016 00:00:00 +0000
+</pubDate>
+<author>
+Nebojša Stričević
+</author>
+</item>
 <item>
 <guid>
 http://www.strika.info/posts/2016-07-03.html
